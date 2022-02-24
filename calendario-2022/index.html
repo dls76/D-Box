@@ -1,0 +1,2348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário 2022</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-calendar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <script src="detalhes.js"></script>
+    <script src="filtros.js"></script>
+    <script src="scroll.js"></script>
+    <script src="script-calendar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+</head>
+
+<body onload="scroll()">
+<!-- <button id="btnTopo"><a href="#janeiro"><ion-icon name="arrow-up-outline"></ion-icon></a></button> -->
+
+<header id="header">
+    <h1>Calendário 2022</h1>
+    <ul>
+        <li><a href="#janeiro">Jan</a></li>
+        <li><a href="#fevereiro">Fev</a></li>
+        <li><a href="#marco">Mar</a></li>
+        <li><a href="#abril">Abr</a></li>
+        <li><a href="#maio">Mai</a></li>
+        <li><a href="#junho">Jun</a></li>
+        <li><a href="#julho">Jul</a></li>
+        <li><a href="#agosto">Ago</a></li>
+        <li><a href="#setembro">Set</a></li>
+        <li><a href="#outubro">Out</a></li>
+        <li><a href="#novembro">Nov</a></li>
+        <li><a href="#dezembro">Dez</a></li>
+    </ul>
+</header>
+
+<section>
+
+    <div class="calendarioNumerico">
+
+        <div id="btns-mantenedora">
+            <button class="btn-filter active" onclick="filterSelection('all')">Todos</button>
+            <button class="btn-filter" onclick="filterSelection('caab')">CAAB</button>
+            <button class="btn-filter" onclick="filterSelection('asp')">ASP</button>
+            <button class="btn-filter" onclick="filterSelection('usb')">USB</button>
+            <button class="btn-filter" onclick="filterSelection('outros')">Outros</button>
+            <button class="btn-filter" onclick="filterSelection('feriados')">Feriados</button>
+        </div>
+
+        <div class="container">
+            <div class="calendar">
+              <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div id="dateCal">
+                  <h1 id="h1Date"></h1>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days">
+                  <div class="prev-date">26</div>
+                  <div class="prev-date">27</div>
+                  <div class="prev-date">28</div>
+                  <div class="prev-date">29</div>
+                  <div class="prev-date">30</div>
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                  <div>5</div>
+                  <div>6</div>
+                  <div>7</div>
+                  <div>8</div>
+                  <div>9</div>
+                  <div>10</div>
+                  <div>11</div>
+                  <div>12</div>
+                  <div>13</div>
+                  <div>14</div>
+                  <div>15</div>
+                  <div>16</div>
+                  <div>17</div>
+                  <div>18</div>
+                  <div>19</div>
+                  <div>20</div>
+                  <div>21</div>
+                  <div>22</div>
+                  <div>23</div>
+                  <div>24</div>
+                  <div>25</div>
+                  <div>26</div>
+                  <div>27</div>
+                  <div>28</div>
+                  <div class="today">29</div>
+                  <div>30</div>
+                  <div>31</div>
+                  <div class="next-date">1</div>
+                  <div class="next-date">2</div>
+                  <div class="next-date">3</div>
+                  <div class="next-date">4</div>
+                  <div class="next-date">5</div>
+                  <div class="next-date">6</div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    
+
+    <div class="conteinerTituloMes" id="janeiro">
+        <h1 class="tituloMes">Janeiro</h1>
+    </div>
+
+    <article>
+
+        <div onclick="show(this)" class="linha caab">
+            <div class="data">27/12 a 31/1</div>            
+            <div class="evento">Férias escolares dos professores
+                <p class="detalhes">piciatis voluptas blanditiis minima amet fugiat cumque, tempore explicabo? Quos.</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div onclick="show(this)" class="linha caab">
+            <div class="data">27/12 a 16/1</div>            
+            <div class="evento">Férias dos gestores escolares
+                <p class="detalhes">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div onclick="show(this)" class="linha caab">
+            <div class="data">17</div>            
+            <div class="evento">Até esta data todos os gestores retornarem ao trabalho
+                <p class="detalhes">Veum officiis dolor.</p>
+            </div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div onclick="show(this)" class="linha caab">
+            <div class="data">16 a 30</div>            
+            <div class="evento">Missão Calebe</div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp"  onclick="show(this)">
+            <div class="data">17 a 19</div>            
+            <div class="evento">GEPEA</div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab"  onclick="show(this)">
+            <div class="data">20</div>            
+            <div class="evento">Reunião SOE e SOP
+                <p class="detalhes">Planejamento APRIMORA, presencial ASP.</p>
+            </div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">24</div>            
+            <div class="evento">Capacitação de Monitores e Coordenadores de Disciplina
+                <p class="detalhes">8h30 às 12h00</p>
+            </div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">25</div>            
+            <div class="evento">Comissão de Educação/Diretiva
+                <p class="detalhes"></p>
+            </div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">25</div>            
+            <div class="evento">Reunião das bibliotecárias
+                <p class="detalhes">Remoto</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">26 e 27</div>            
+            <div class="evento">Planejamento Administrativo
+                <p class="detalhes">Diretores, vices, tesoureiros, secretários, capelães, SOE e SOP.</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="data">26</div>            
+            <div class="evento">Feriado municipal Fazenda Rio Grande
+                <p class="detalhes"></p>
+            </div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">28</div>            
+            <div class="evento">Capacitação e Treinamento com Zeladoria
+                <p class="detalhes">9h00 às 11h00</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+    </article>
+
+    <div class="conteinerTituloMes" id="fevereiro">
+        <h1 class="tituloMes">Fevereiro</h1>
+    </div>
+
+    <article>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1 a 24</div>            
+            <div class="evento">Provas Diagnósticas (PAAEB)
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1 a 4</div>            
+            <div class="evento">Capacitação e Planejamento - unidades escolares
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento">Capacitação ASP
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento">Reunião CAAB (só pela manhã)
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento">Capacitação profs de 1º ao 5º ano – Aprimora (ON LINE) 13h30 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento"> Encontro de professores - Competência Leitora  
+                <p class="detalhes">Fund 2 e Médio - 9 horas (zoom) - Profº Russo</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento"> Capacitação de professores de Redação  
+                <p class="detalhes">Fund 2 e EM (zoom) - 14 horas - profº Russo</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento">Capacitação de professores de 1º ao 5º ano
+                <p class="detalhes">Aprimora (online) 13h30.</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento">Capacitação de Professores de Redação 
+                <p class="detalhes">Fundamental 2 e EM (online) todos 13h30.</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">3</div>            
+            <div class="evento">Capacitação Geral ASP
+                <p class="detalhes">Online - cada escola reúne seu grupo na unidade. Fornecer almoço.</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">3</div>            
+            <div class="evento">Reunião com Nutricionista e Cantinas ASP
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">3</div>            
+            <div class="evento">Aula inaugural - Chave do ENEM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">4</div>            
+            <div class="evento">Reunião com professores de Educação Física - ASP
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">5 a 9</div>            
+            <div class="evento">Concílio Pastoral ASP - Foz do Iguaçu
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7 a 11</div>            
+            <div class="evento">Semana de Acolhimento, prevenção a acidentes e ao COVID-19
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7</div>            
+            <div class="evento">Início do 1º bimestre/Início das aulas 6º ao Médio
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7</div>            
+            <div class="evento">Celebra de abertura do ano - 6º ao Médio
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7</div>            
+            <div class="evento">Entrega de materiais e entrevista com a professora EI ao 5º
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7</div>            
+            <div class="evento">Reunião de Pais da Educação Infantil ao 5º ano - Online
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento">Dia de acolhimento ao 6º ano
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento">Início das aulas EI ao 5º ano - Celebra de Abertura do ano
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento">Data limite para entrega do planejamento ao SOP
+                <p class="detalhes">Com os critérios avaliativos do bimestre</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento">Entrega de planejamentos e cronogramas FI  ao SOP
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento">Entrega de planejamentos e cronogramas F2-EM  ao SOP
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento">Encontro de Mentores - NEM - remoto
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">9</div>            
+            <div class="evento">Redação Nota 1000 - Dia de Lançamento para os alunos 
+                <p class="detalhes">Fundamental 2 e EM</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">9 a 14</div>            
+            <div class="evento">Revisão e organização dos critérios avaliativos 
+                <p class="detalhes">com os devidos conteúdos do 1º bimestre - SOP</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">9</div>            
+            <div class="evento">Capacitação Equipe das Unidades Bilíngues PR - USB
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">10 a 19</div>            
+            <div class="evento">Dez Dias de Oração
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">10</div>            
+            <div class="evento">Chave do ENEM
+                <p class="detalhes">Escolha das carreiras e o papel das universidades - Projeto de Vida (remoto)</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">10</div>            
+            <div class="evento">Celebra EI-5º
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">11</div>            
+            <div class="evento">Dia do Zelador 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">14?</div>            
+            <div class="evento">Último dia para cadastro e alteração de itinerários EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">14</div>            
+            <div class="evento">Último dia para início do uso dos livros didáticos
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">14 a 18</div>            
+            <div class="evento">Agendar o simulado/avaliação diagnóstica do APRIMORA
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">15</div>            
+            <div class="evento">Comissão Diretiva/Educação
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">17</div>            
+            <div class="evento">Lançamento Chave do ENEM - revisão - IAP/CPB/USB
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">17</div>            
+            <div class="evento">Comissão PMDE/Criacionismo
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">18</div>            
+            <div class="evento">Data limite para envio dos cronogramas avaliativos bimestrais aos alunos
+                <p class="detalhes">SOE responsável para disponibilizar para alunos, responsáveis e portal</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">18</div>            
+            <div class="evento">Envio dos cronogramas do 1º bimestre aos alunos - EI-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">SOP</ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">20 a 23</div>            
+            <div class="evento">Encontro de Pastores de Escola
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21 a 25</div>            
+            <div class="evento">Semana de Hábitos de Estudo - SOE
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21 a 25</div>            
+            <div class="evento">Semana de Hábitos de Estudo/Lançamento Mérito Acadêmico
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22</div>            
+            <div class="evento">Reunião de SOP e SOE - ASP
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">23</div>            
+            <div class="evento">Reunião de assistentes financeiros - Campos - remoto
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">24</div>            
+            <div class="evento">Data limite para cadastro dos alunos
+                <p class="detalhes">Plataforma da CPB, Aprimora, Aplictivo CPB</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">25</div>            
+            <div class="evento">Data limite para entrevista com todos os alunos novos - SOE
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha feriado" onclick="show(this)">
+            <div class="data">28</div>            
+            <div class="evento">Recesso
+                <p class="detalhes">Dia permutável com dia 15/05 - Domingo letivo - Dia das Mães</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data"></div>            
+            <div class="evento">Cada unidade acrescentar em seu Calendário
+                <p class="detalhes">
+                    <ul>
+                        <li>Primeira reunião de pais e mestres até 18/02
+                            <ul>
+                                <li>Entrega do Manual da Família</li>
+                            </ul>
+                        </li>
+                        <li>Divulgação do Projeto Mérito Acadêmico / Supera</li>
+                        <li>Semana de Prevenção a Acidentes e de Prevenção a Covid9 Contar com o apoio da CIPA para realizar</li>
+                        <li>Cronograma dos Celebras/Capelas do 1º bimestre – Capelão, SOP e SOE – definir um dia fixo semanal</li>
+                        <li>Após a avaliação diagnóstica, início das Oficinas de Reforço Escolar (já iniciar no final de fevereiro)</li>
+                        <li>Marcar a Palestra de Redação do 1º bimestre SOP</li>
+                        <li>Cronograma das Reuniões Pedagógicas/Formação Continuada
+                            <ul>
+                                <li>EI e Fund 1 – individual – quinzenal nas aulas diferenciadas e geral 1 mensal</li>
+                                <li>Fund 2 e EM – geral 1 mensal</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data"></div>            
+            <div class="evento">Curiosidades
+                <p class="detalhes">
+                    <ul>
+                        <li>18 – Dia Nacional de Combate ao Alcoolismo</li>
+                        <li>19 – Dia do Esportista</li>
+                        <li>27 – Dia do Livro Didático</li>
+                        <li>Essas datas são para ciência e não para realização de projetos pedagógicos para todas as datas.</li>
+                        <li>Toda segunda-feira das 14h às 17h o departamento estará em reunião administrativa</li>
+                    </ul>
+                    </p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+        
+    </article>
+
+    <div class="conteinerTituloMes" id="marco">
+        <h1 class="tituloMes">Março</h1>
+    </div>
+
+    <article>
+
+        <div class="linha feriado" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento">Feriado Carnaval
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2 a 31</div>            
+        <div class="evento">Recuperação e Remediação do 1º ano
+            <p class="detalhes">Acrescentar alunos que não estão alfabetizados</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">2 a 31</div>            
+            <div class="evento">Primeira visita Indicadores de Qualidade – Escola Saudável - Campo
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">3 a 11</div>            
+            <div class="evento">Simulado Aprimora 3º ao 5º ano
+                <p class="detalhes">Diagnóstico (conteúdo anterior) – 1º e 2º anos atividades agendadas</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">3 a 11</div>            
+            <div class="evento"> Período de aplicação da AV1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7 a 11</div>            
+            <div class="evento">Celebra - Semana da Bíblia
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Pr. Eduardo</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7 a 11</div>            
+            <div class="evento">Aplicação AV1 - EI-5º
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7 a 11</div>            
+            <div class="evento">Aplicação AV1 - F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">7 a 11</div>            
+            <div class="evento"> Lançamento do PMDS/PMDE 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7</div>            
+            <div class="evento"> Fazer o levantamento dos alunos que não compraram livros didáticos
+                <p class="detalhes">Verificar primeiramente se há falta de algum livro – loja</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7</div>            
+            <div class="evento">Início das oficinas de reforço F1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento"> Dia Internacional da Mulher
+                <p class="detalhes">Homenagem alunas (SOE) - homenagem funcionárias e professoras (Homens ADM)</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento"> Lançamento dos cursos da Única
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento"> Treinamento Pastores Escola ASP e ACP
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">9</div>            
+            <div class="evento"> Treinamento TIs/ MKT/Comunicação
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">10</div>            
+            <div class="evento"> Comissão Diretiva/Educação
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">11</div>            
+            <div class="evento"> Data limite para aplicação da AV1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">11</div>            
+            <div class="evento"> Encontro de Mentores – NEM – Manhã
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">12</div>            
+            <div class="evento"> Dia do Bibliotecário
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">14 a 18</div>            
+            <div class="evento">Início das Classes Bíblicas 4º e 5º ano
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Pr. Eduardo</div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">14 e 15</div>            
+            <div class="evento"> Realização do APSE
+                <p class="detalhes">Todas as turmas de EM</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Sandra</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">14</div>            
+            <div class="evento">Segunda chamada AV1 - F1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">15</div>            
+            <div class="evento">Segunda chamada AV1 - F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">15</div>            
+            <div class="evento"> Coordenação Fund 1 – liberar “gerar atividade de reforço” para 4º e 5º ano
+                <p class="detalhes"> Aprimora (gerenciar a colocação na agenda dos alunos)</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">15</div>            
+            <div class="evento"> Reunião com alunos/pais bolsistas
+                <p class="detalhes">Assinatura documento(s)</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">15</div>            
+            <div class="evento"> Formação Continuada por Área - Linguagens
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">16</div>            
+            <div class="evento"> Formação Continuada por Área - Matemática
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">17</div>            
+            <div class="evento"> Formação Continuada por Área - Humanas
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">18</div>            
+            <div class="evento"> Formação Continuada por Área - Natureza
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">18</div>            
+            <div class="evento"> Data limite para 2ª chamada da AV1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">18</div>            
+            <div class="evento"> Último Ranking das Matrículas
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="data">19</div>            
+            <div class="evento"> Feriado Municipal S José dos Pinhais
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="data">19</div>            
+            <div class="evento"> Dia do Jovem Adventista
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="data">20</div>            
+            <div class="evento">Feriado de Pinhais
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="data">20</div>            
+            <div class="evento">Início do Outono 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21/03 a 01/04</div>            
+            <div class="evento"> Período de aplicação da AV2 (Sugestivo)
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">22</div>            
+            <div class="evento"> Conselho de Educação USB – remoto
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">22</div>            
+            <div class="evento"> Reunião Administrativa (departamentais e coordenadores) – remoto
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22</div>            
+            <div class="evento"> Data limite para o lançamento das notas AV1 no SAD (prof)
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">24</div>            
+            <div class="evento">Conselho participativo
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="data">27</div>            
+            <div class="evento">Feriado Municipal de União da Vitória
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">28 a 31</div>            
+            <div class="evento"> Orçamentos / Entrega da planilha de parceiros
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">28 a 31</div>            
+            <div class="evento"> Pesquisa de satisfação com todos os alunos novos
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="data">29</div>            
+            <div class="evento">Encontro de Professores de Projeto de Vida - USB
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">31 a 8/4</div>            
+            <div class="evento">Aplicação da AV2 - F1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">31</div>            
+            <div class="evento">Data limite p/ regularizar registros conteúdos e notas do mês no SAD (prof)
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">31</div>            
+            <div class="evento">Formação continuada EI-F1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">31</div>            
+        <div class="evento">Devolutiva do APSE aos alunos e pais (zoom)
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data"></div>            
+            <div class="evento">Observações
+                <p class="detalhes">
+                    <ul class="detalhes">
+                        <li>Eleição dos Alunos Líderes de Turma e Professores Conselheiros – SOE - cadastrar no sistema de secretaria (aluno líder e conselheiro)</li>
+                        <li>Reunião com os alunos líderes de turma - SOE</li>
+                        <li>Entrega da planilha com a relação dos alunos vindos das escolas parceiras, motoristas de vans, pastores e indicações de funcionários e alunos</li>
+                        <li>Início das Classes Bíblicas - 4º e 5º anos</li>
+                        <li>Reunião Pedagógica/Formação Continuada</li>
+                        <li>Começar a pagar as 40 aulas para prof de Ed Física – aulas dos jogos – 10 em agosto/15 em setembro/15 outubro- total 40 aulas</li>
+                        <li>A 1ª visita técnica será feita por segmento (secretaria, sop e soe, tesouraria e direção) com data agendada individualmente</li>
+                    </ul>
+                </p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data"></div>            
+            <div class="evento">Curiosidades
+                <p class="detalhes">
+                    <ul class="detalhes">
+                        <li>05 – Dia da Oração</li>
+                        <li>14 – Dia Nacional dos Animais</li>
+                        <li>15 – Dia da Escola</li>
+                        <li>20 – Dia Mundial da Saúde Bucal</li>
+                        <li>21 – Dia Internacional das Florestas e da Árvore</li>
+                        <li>21 – Dia Mundial da Poesia</li>
+                        <li>Essas datas são para ciência e não para realização de projetos pedagógicos para todas as datas.
+                        </li>
+                        <li>Toda segunda-feira das 14h às 17h o departamento estará em reunião administrativa</li>
+                    </ul>
+                </p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel"><ion-icon name="person-outline"></ion-icon></div>
+        </div>
+
+    </article>
+
+    <div class="conteinerTituloMes" id="abril">
+        <h1 class="tituloMes">Abril</h1>
+    </div>
+
+    <article>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">21/3 a 8/4</div>            
+        <div class="evento">Período de Aplicação da AV1
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">31/3 a 8/4</div>            
+        <div class="evento">Aplicação da AV1 - F1
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Karol</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">1 a 30</div>            
+        <div class="evento"> Aplicação das provas diagnósticas de alfabetização 
+            <p class="detalhes">1ª testagem – prova unificada ASP/USB</p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">1 a 8</div>            
+        <div class="evento"> Pesquisa/ avaliação dos professores pelos alunos 
+            <p class="detalhes">Como será a metodologia?</p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">1 a 8</div>            
+        <div class="evento"> Concílio Família Pastoral ASP – CATRE SC 
+            <p class="detalhes">Como será a metodologia?</p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">4 a 8</div>            
+        <div class="evento"> Impacto Esperança nas Escolas
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel"></div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">4 a 8</div>            
+        <div class="evento"> Enem Interativo (ASP - 05 e 06)
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">4 a 12</div>            
+        <div class="evento">Aplicação da AV2 - F2-EM 
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Giselle</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">4 a 8</div>            
+        <div class="evento">Encontro Pedagógico EI-F1 - SOP
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Karol</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">5</div>            
+        <div class="evento"> Data limite para a elaboração dos PEI’s 2022 – SOE
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOE</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">5</div>            
+        <div class="evento">Entrega de Planejamento e cronogramas 2º bimestre
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Giselle</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">5</div>            
+        <div class="evento"> Simulado Teen
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Giselle</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">5</div>            
+        <div class="evento"> Data limite para a aplicação da AV2
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">5</div>            
+        <div class="evento"> Simulado Enem Teen e Enem Treineiro – Fund 2 e EM
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">6</div>            
+        <div class="evento"> Capacitação de profs de Redação – fund 2 e EM (zoom) - 18 horas - profº Russo
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">8</div>            
+        <div class="evento"> Entrega Cronogramas 2º bimestre ao SOP - F1
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Karol</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">9</div>            
+        <div class="evento"> Capacitação de profs de Redação – fund 2 e EM (zoom) - 18 horas - profº Russo
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Pr Eduardo</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">11 a 20</div>            
+        <div class="evento"> Redação Nota 1000 – palestra alunos - presencial
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">11 a 14</div>            
+        <div class="evento"> Semana Santa (1ª semana de Oração)
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Pr Eduardo</div>
+    </div>
+
+    <div class="linha usb" onclick="show(this)">
+        <div class="data">11 a 14</div>            
+        <div class="evento"> Reunião Campos – Feedback/análise do marketing
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Pr Eduardo</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">12</div>            
+        <div class="evento">2ª chamada AV2- FI
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Denise</div>
+    </div>
+
+    <div class="linha usb" onclick="show(this)">
+        <div class="data">11</div>            
+        <div class="evento"> Encontro de mentores – NEM
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">USB</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">12</div>            
+        <div class="evento"> Comissão Diretiva/Educação
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">ASP</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">13</div>            
+        <div class="evento"> Convocação para recuperação FI- SOE
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Denise</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">13</div>            
+        <div class="evento"> Data limite para o lançamento das notas da AV2 no SAD
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">14 a 19</div>            
+        <div class="evento"> Recuperações  FI
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Karol</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">14</div>            
+        <div class="evento"> Organização das convocações para a Recuperação Bimestral
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOE</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">14 a 18</div>            
+        <div class="evento"> Agendar a simulado/avaliação diagnóstica do Aprimora
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Karol</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">14</div>            
+        <div class="evento"> 2ª chamada AV2
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Cida Sandra</div>
+    </div>
+    
+    <div class="linha feriado" onclick="show(this)">
+        <div class="data">15</div>            
+        <div class="evento"> Feriado – Sexta-feira Santa
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel"></div>
+    </div>
+
+    <div class="linha feriado" onclick="show(this)">
+        <div class="data">17</div>            
+        <div class="evento"> Páscoa
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel"></div>
+    </div>
+    
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">18</div>            
+        <div class="evento"> Entrega das convocações para a Recuperação Bimestral aos alunos
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOE</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">18</div>            
+        <div class="evento"> Fechamento de notas parciais - F2-EM
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Giselle</ion-icon></div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">18</div>            
+        <div class="evento"> Reunião SOE e SOP (zoom)
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Sop/Soe</ion-icon></div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">19</div>            
+        <div class="evento">Convocação recuperação 
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Cida Sandra</div>
+    </div>
+
+    <div class="linha usb" onclick="show(this)">
+        <div class="data">19 e 20</div>            
+        <div class="evento"> GEPEA – Todos e Internatos – presencial IAP
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">USB</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">19</div>            
+        <div class="evento">Aulão Terceirão
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Giselle</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">19</div>            
+        <div class="evento">Reunião Pedagógica - F2-EM
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Giselle</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">20 a 24</div>            
+        <div class="evento">  Encontro de Encerramento das Matrículas 2022
+            <p class="detalhes">Equipe gestora – Foz do Iguaçu (sai na quarta-feira a noite e retorno no domingo a noite)
+            </p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel"></div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">20</div>            
+        <div class="evento">  Final do 1º bimestre
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel"></div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">25 a 29</div>            
+        <div class="evento">  Semana de aplicação da Recuperação Bimestral
+            <p class="detalhes">
+            </p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+
+    <div class="linha usb" onclick="show(this)">
+        <div class="data">25 a 29</div>            
+        <div class="evento">  Visita de interação – ASP, ACP
+            <p class="detalhes">
+            </p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">USB</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">26</div>            
+        <div class="evento"> Reunião secretárias de campo
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">USB</div>
+    </div>
+
+    <div class="linha caab" onclick="show(this)">
+        <div class="data">25 a 29</div>            
+        <div class="evento"> Recuperações EFII e EM
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">Giselle</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">25</div>            
+        <div class="evento"> Início do 2º bimestre
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel"></div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">26</div>            
+        <div class="evento"> Formação continuada professores de redação
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+    
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">28</div>            
+        <div class="evento"> Reunião Secretaria - ASP
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">??</div>
+    </div>
+    
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">29</div>            
+        <div class="evento"> Prazo final para notas, conteúdos, faltas lançados no SAD (prof)
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">??</div>
+    </div>
+
+    <div class="linha asp" onclick="show(this)">
+        <div class="data">29</div>            
+        <div class="evento"> Data limite para o envio dos Cronogramas Avaliativos aos alunos (2º Bim)
+            <p class="detalhes"></p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel">SOP</div>
+    </div>
+  
+    <div class="linha caab" onclick="show(this)">
+        <div class="data"></div>            
+        <div class="evento"> OBSERVAÇÕES
+            <p class="detalhes">
+                <ul>
+                    <li>Olimpíada de Matemática – OMEA (SOP)</li>
+                    <li>Reunião Pedagógica/Formação Continuada (SOP)</li>
+                    <li>Verificar data de abertura da Inscrição no Enem (passar informações aos responsáveis - SOE)</li>
+                </ul>
+            </p></div>
+        <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+        <div class="responsavel"></div>
+    </div>
+
+    </article>
+
+    <div class="conteinerTituloMes" id="maio">
+        <h1 class="tituloMes">Maio</h1>
+    </div>
+    
+    <article>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento"> Envio dos cronogramas do 2º bimestre aos alunos FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2 a 6</div>            
+            <div class="evento">Conselho de classe e Encontro Pedagógico EI-FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise Karol</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">2</div>            
+            <div class="evento"> Envio dos cronogramas do 2º bimestre aos alunos
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">5</div>            
+            <div class="evento"> Conselho de classe EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">5</div>            
+            <div class="evento"> Conselho Participativo EI/FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">9</div>            
+            <div class="evento"> 1ª Fase Olimpíadas de Matemática CAAB
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">9 a 13</div>            
+            <div class="evento"> Semana de Hábitos de Estudo
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">9 a 13</div>            
+            <div class="evento"> Semana de Hábitos de Estudo/Celebra EI/FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">16 a 20</div>            
+            <div class="evento"> Aplicação AV1 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">16 a 20</div>            
+            <div class="evento"> AV1 EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">23</div>            
+            <div class="evento"> 2ª Chamada AV1-FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">24</div>            
+            <div class="evento"> Dia do Vestibulando/Aulão Terceirão
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Sandra Giselle</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">25</div>            
+            <div class="evento"> 2ª Chamada AV1 - F2-EM 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">31</div>            
+            <div class="evento"> Conselho participativo EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+    </article>
+
+    <div class="conteinerTituloMes" id="junho">
+        <h1 class="tituloMes">Junho</h1>
+    </div>
+    
+    <article>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">5 a 10</div>            
+            <div class="evento"> AV2 EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">6 a 14</div>            
+            <div class="evento"> Aplicação AV2 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">14</div>            
+            <div class="evento"> 2ª Chamada AV2
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">14</div>            
+            <div class="evento"> Aulão Terceirão
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">15</div>            
+            <div class="evento"> Fechamento de notas parciais
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">20</div>            
+            <div class="evento"> 2ª Chamada AV2 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21</div>            
+            <div class="evento">  Convocação para recuperação FI- SOE
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21</div>            
+            <div class="evento"> Convocação para recuperação F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22 a 28</div>            
+            <div class="evento">  Recuperações EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22 a 28</div>            
+            <div class="evento"> Recuperações FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">28</div>            
+            <div class="evento"> Último prazo para entrega do PEI – EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">29</div>            
+            <div class="evento"> 2ª Fase Olímpiadas de Matemática CAAB
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">29 a 1/7</div>            
+            <div class="evento"> Jogos Interséries
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">29 a 1/7</div>            
+            <div class="evento"> Conselho de classe Individual EI/FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">30</div>            
+            <div class="evento"> Conselho de classe - F2-EM 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra </div>
+        </div>
+
+
+       
+
+
+
+
+    
+    </article>
+
+    <div class="conteinerTituloMes" id="julho">
+    <h1 class="tituloMes">Julho</h1>
+    </div>
+
+    <article>
+
+       
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento"> Entrega de Planejamentos e cronogramas 3º bimestre - F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento"> Entrega de Planejamentos e cronogramas 3º bimestre EI-FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento"> Encerramento do semestre- Encontro família CAAB
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">ADM</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22</div>            
+            <div class="evento"> Envio do cronograma do 3º bimestre aos alunos
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">25 a 29</div>            
+            <div class="evento"> Semana de Hábitos de Estudo
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22</div>            
+            <div class="evento"> Envio do cronograma do 3º bimestre aos alunos-FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">25 a 29</div>            
+            <div class="evento"> Semana Hábitos de Estudo/Celebra EI/FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">26</div>            
+            <div class="evento"> Aulão Terceirão
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">28</div>            
+            <div class="evento"> Conselho Participativo EI/FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        
+ 
+    </article>
+
+    <div class="conteinerTituloMes" id="agosto">
+        <h1 class="tituloMes">Agosto</h1>
+    </div>
+
+    <article>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7 a 12</div>            
+            <div class="evento"> Semana do Estudante
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">29</div>            
+            <div class="evento"> Simulado
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">30</div>            
+            <div class="evento"> Início do projeto Ensino Médio com o 9º ano
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8 a 12</div>            
+            <div class="evento"> Aplicação AV1 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">11</div>            
+            <div class="evento"> Homenagem pelo Dia do Estudante EI-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">SOE</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">15</div>            
+            <div class="evento"> 2ª chamada AV1 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">15 a 19</div>            
+            <div class="evento"> AV1 FII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22 a 26</div>            
+            <div class="evento"> Encontro Pedagógico EI/FI- SOP/ Celebra EI/FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">24</div>            
+            <div class="evento"> 2ª chamada AV1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">29</div>            
+            <div class="evento">Simulado
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">29 a 2/9</div>            
+            <div class="evento"> Conselho Individual EI-FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+  
+        
+    
+    </article>
+
+    <div class="conteinerTituloMes" id="setembro">
+        <h1 class="tituloMes">Setembro</h1>
+    </div>
+
+    <article>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento"> Conselho Participativo EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">12 a 19</div>            
+            <div class="evento"> AV2 EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">12 a 20</div>            
+            <div class="evento"> Aplicação AV2 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">23</div>            
+            <div class="evento"> 2ª chamada AV2 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">20</div>            
+            <div class="evento"> Entrega de planejamento e cronograma 4º bimestre F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">20</div>            
+            <div class="evento"> Entrega de cronograma 4º bimestre ao SOP FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21</div>            
+            <div class="evento"> 2ª chamada AV2 F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21 e 22</div>            
+            <div class="evento">  ENEM Interativo
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">22</div>            
+            <div class="evento"> Fechamento de notas parciais F2-EM 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">26 a 30</div>            
+            <div class="evento"> Recuperações EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+  
+       
+    
+    </article>
+
+    <div class="conteinerTituloMes" id="outubro">
+        <h1 class="tituloMes">Outubro</h1>
+    </div>
+
+    <article>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">3</div>            
+            <div class="evento"> Fechamento de notas F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">4</div>            
+            <div class="evento"> Finalização Projeto 9º ano
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">6</div>            
+            <div class="evento"> Encontro Pedagógico e Conselho de classe 3º bimestre EI-EFI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">6 a 11</div>            
+            <div class="evento"> Semana da Criança
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">6</div>            
+            <div class="evento"> Conselho de classe 3º bimestre EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">9</div>            
+            <div class="evento"> Feira Cultural (?)
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol Giselle</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">10</div>            
+            <div class="evento"> Conselho Participativo EI/FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">19 a 25</div>            
+            <div class="evento"> Aplicação AV1 EFI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">19 a 26</div>            
+            <div class="evento"> AV1 EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">20</div>            
+            <div class="evento">Avaliação da DSA no CAAB
+                <p class="detalhes">Período da tarde</p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Diretor</div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">27</div>            
+            <div class="evento">  2ª Chamada AVI EFI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        
+
+        
+    
+    </article>
+    
+    <div class="conteinerTituloMes" id="novembro">
+        <h1 class="tituloMes">Novembro</h1>
+    </div>
+
+    <article>
+
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento"> 2ª Chamada AV1 - F2-EM 
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">5</div>            
+            <div class="evento">  Conquistando o Terceirão
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7 a 11</div>            
+            <div class="evento"> Conselho Individual EI-FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento"> Conselho participativo F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">10</div>            
+            <div class="evento">  Aulão Rumo ao 6º ano
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise Cida</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">16 a 22</div>            
+            <div class="evento"> AV2 EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">21 a 28</div>            
+            <div class="evento"> Aplicação AV2 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Karol</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">24</div>            
+            <div class="evento"> 2ª chamada AV2 F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+         
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">24</div>            
+            <div class="evento"> Thanksgiving
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">25</div>            
+            <div class="evento"> Fechamento de notas parciais F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">28</div>            
+            <div class="evento"> Convocação para recuperação F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">30</div>            
+            <div class="evento"> 2ª chamada AV2 FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">30 a 6/12</div>            
+            <div class="evento"> Recuperações EFII e EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+  
+
+    </article>
+
+    <div class="conteinerTituloMes" id="dezembro">
+        <h1 class="tituloMes">Dezembro</h1>
+    </div>
+
+    <article>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">1</div>            
+            <div class="evento"> Convocação para Recuperação EFI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+  
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">5 a 8</div>            
+            <div class="evento"> Recuperação 4º B EFI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">7</div>            
+            <div class="evento"> Fechamento de notas F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Giselle</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">8</div>            
+            <div class="evento"> Conselho de classe 4º Bimestre F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">9</div>            
+            <div class="evento">   Convocação para prova final F2-EM
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Cida Sandra</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">12</div>            
+            <div class="evento"> Conselho de classe 4º Bimestre EI-FI
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">12</div>            
+            <div class="evento"> Convocação Prova Final F1
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">Denise</div>
+        </div>
+ 
+        <div class="linha caab" onclick="show(this)">
+            <div class="data">18</div>            
+            <div class="evento"> Formaturas
+                <p class="detalhes"></p></div>
+            <div class="editar"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="responsavel">SOE</div>
+        </div>
+ 
+      
+ 
+ 
+    
+    </article>
+
+</section>
+
+<footer></footer>
+    
+</body>
+</html>

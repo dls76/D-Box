@@ -1,0 +1,1135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+#capa {
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    padding-top: 6px;
+    padding-left: 10px;
+    width: 120px;
+    position: absolute;
+    left: 10px;
+    top: 1.5px;
+}
+
+#link-emergencias {
+    background-color: #FF4538;
+    color: #09181F;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    background: #09181F;
+}
+
+.wrapper ul {
+    list-style: none;
+}
+
+
+.wrapper ul li {
+    background: #09181F;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    font-family: 'Roboto';
+}
+
+.wrapper ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper ul li:hover {
+    background: dodgerblue;
+}
+
+.wrapper ul ul {
+    display: none;
+}
+
+.wrapper ul li:hover > ul {
+    display: block;
+}
+
+.wrapper ul ul ul {
+    margin-left: 160px;
+    top: 0;
+    position: absolute;
+}
+
+#banner-area {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/capa.jpg);
+    background-size: cover;
+}
+
+#content-area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 50px;
+}
+
+#content {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center; 
+    color: white;
+    font-weight: 400;
+}
+
+.link-menu-corpo {
+    width: 200px;
+    border: 2.5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    
+    letter-spacing: .5px;
+}
+
+.link-menu-corpo:hover {
+    /* background-color: rgb(209, 205, 205); */
+    background-color: white;
+    color: #09181F;
+    font-weight: 600;
+    border: 2px solid white;
+    /* border: 2px solid rgb(209, 205, 205); */
+}
+
+.data-inicial p {
+    color: black;
+}
+
+#topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #09181F;
+    font-family: 'Roboto';
+    font-size: 10px;
+}
+
+.horario_por_professor_6M {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.horario_por_professor_6M caption{
+    background-color: #BF1D34;
+    color: white;
+    padding: 8px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.horario_por_professor_6M th {
+    border-bottom: 1px solid #48524C;
+}
+
+.horario_por_professor_6M td {
+    padding: 2px;
+}
+
+#sec-aulas {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    background-color: #09181F;
+    color: white;
+}
+
+#sec-aulas h1 {
+    padding: 25px;
+}
+
+.conteiner-aulas {
+    width: auto;
+}
+
+.titulo-secao {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.nome-titulo-secao {
+    font-size: 42px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.sub-titulo-secao {
+    font-size: 24px;
+}
+
+#sec-hor {
+    background-color: whitesmoke;
+    padding-bottom: 100px;
+}
+
+#sec-hor p {
+    color: #09181F;
+}
+
+#sec-salas {
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    background-color: #A1B30C;
+    padding-bottom: 120px;
+}
+
+#sec-pes {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-bottom: 200px;
+    color: white;
+    text-align: center;
+}
+
+#sec-pes #conteudo-pessoas {
+    text-align: center;
+}
+
+#conteudo-pessoas {
+    margin-top: 20px;
+    display: block;
+}
+
+#mapa-salas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mapa-salas {
+    width: 300px;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.mapa-salas caption {
+    background-color: #09181F;
+    color: white;
+    padding: 10px 0;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.mapa-salas td {
+    padding: 5px 0;
+    border: 0.5px solid #09181F;
+}
+
+.mapa-salas th {
+    border: 0.5px solid #09181F;
+}
+
+.tabela-tutores  {
+    width: 650px;
+    background-color: white;
+    color: #09181F;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 5px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.tabela-tutores th {
+    text-align: center;
+    border: 1px lightgray solid;
+    background-color: lightgray;
+}
+
+.tabela-tutores tr:hover {
+    background-color: lightgray;
+}
+
+
+.tabela-tutores td {
+    padding: 8px 2px 2px 1px;
+    border: 1px lightgray solid;
+}
+
+.tabela-tutores td:nth-child(1)  {
+    text-align: center;
+}
+
+.tabela-tutores td:nth-child(3)  {
+    text-align: center;
+}
+
+.tabela-tutores td:nth-child(4)  {
+    text-align: center;
+}
+
+.tabela-tutores caption  {
+    padding: 12px 0 8px 0;
+    background-color: #09181F;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABELAS COMPENSAÇÃO E PLANTÃO SEXTA */
+
+
+
+#compensacao {
+    width: 650px;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 12px gray;
+}
+
+#plantaodesexta {
+    width: 650px;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 12px gray;
+}
+
+#compensacao td, #plantaodesexta td {
+    padding: 12px 0 2px 0;
+    color: #09181F;
+}
+
+#compensacao th, #plantaodesexta th {
+    padding: 6px 0;
+    background-color: #cbe5ff;
+    color: #09181F;
+    font-weight: normal;
+}
+
+#compensacao caption, #plantaodesexta caption {
+    background-color: #09181F;
+    color: white;
+    padding: 16px 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#compensacao tr:nth-child(odd), #plantaodesexta tr:nth-child(odd) {
+    background-color: #dfecfa;
+}
+
+#compensacao tr:hover, #plantaodesexta tr:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+/* FIM DAS TABELAS DE COMPENSAÇÃO E PLANTÃO SEXTA */
+
+
+
+
+
+
+
+
+
+
+
+
+#horarios-periodos-6M {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#horarios-periodos-6M  img {
+    border: 0.5px lightgray;
+    box-shadow: 2px 2px 5px  gray;
+}
+
+/* ===================TABELA COMUNICADOS ====================== */
+
+#tabela-comunicados {
+    width: 60%;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 12px gray;
+    margin-bottom: 50px;
+}
+
+#tabela-comunicados td {
+    padding: 12px 0 2px 8px;
+    color: #09181F;
+    font-size: 14px;
+}
+
+#tabela-comunicados td:nth-child(3) {
+    text-align: left;
+}
+
+#tabela-comunicados th {
+    padding: 6px 0;
+    background-color: #cbe5ff;
+    color: #09181F;
+    font-weight: normal;
+}
+
+#tabela-comunicados caption {
+    background-color: #FF4538;
+    color: white;
+    padding: 16px 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#tabela-comunicados tr:nth-child(odd) {
+    background-color: rgb(250, 234, 234);
+}
+
+#tabela-comunicados a {
+    text-decoration: none;
+    color: #09181F;
+}
+
+#tabela-comunicados a:hover {
+    text-decoration: underline;
+}
+
+#tabela-comunicados tr:hover {
+    background-color: #cbe5ff;
+}
+
+
+.reforco {
+    width: 400px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 2px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.reforco caption {
+    background-color: #FF4538;
+    color: white;
+    padding: 5px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.reforco td {
+    padding: 7px 0 1px 1px;
+}
+
+.reforco tr:nth-child(even){
+    background-color: #dfecfa;
+}
+
+#reforços {
+    text-align: center;
+}
+
+#tabela-adm {
+    margin: 100px auto;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 120px;
+    background-color: #fffbfb;
+}
+
+#tabela-adm caption {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #09181F;
+    color: white;
+    padding: 7px;
+}
+
+#tabela-adm th {
+    background-color: rgb(151, 146, 146);
+    color: white;
+    font-weight: normal;
+    border: 1px lightgray solid;
+}
+
+#tabela-adm td {
+    padding: 8px 2px 2px 1px;
+    border: 1px lightgray solid;
+}
+
+#tabela-adm tr {
+    color: #09181F;
+}
+
+#tabela-adm tr:hover {
+    background-color: #c6c7c7
+}
+
+#tabela-adm td:nth-child(1) {
+    text-align: left;
+    padding-left: 4px;
+}
+
+#tabela-adm td:nth-child(2) {
+    text-align: left;
+    padding-left: 4px;
+}
+
+/* ========== TABELA PROFESSORES INFANTIL E F1 ===========*/
+
+
+#tabela-professores-infantil-F1 {
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 120px;
+    background-color: #fffbfb;
+}
+
+#tabela-professores-infantil-F1 caption {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #09181F;
+    color: white;
+    padding: 7px;
+}
+
+#tabela-professores-infantil-F1 th {
+    background-color: rgb(151, 146, 146);
+    color: white;
+    font-weight: normal;
+    border: 1px lightgray solid;
+}
+
+#tabela-professores-infantil-F1 td {
+    padding: 8px 2px 2px 1px;
+    border: 1px lightgray solid;
+}
+
+#tabela-professores-infantil-F1 tr {
+    color: #09181F;
+}
+
+#tabela-professores-infantil-F1 tr:hover {
+    background-color: #c6c7c7
+}
+
+#tabela-professores-infantil-F1 td:nth-child(1) {
+    text-align: left;
+    padding-left: 4px;
+}
+
+#tabela-professores-infantil-F1 td:nth-child(2) {
+    text-align: left;
+    padding-left: 4px;
+}
+
+/* ========== TABELA PROFESSORES 6M ===========*/
+
+#tabela-professores-6M {
+    margin: auto;
+    width: 98%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 120px;
+    background-color: #fffbfb;
+    font-size: 15px;
+}
+
+#tabela-professores-6M caption {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #09181F;
+    color: white;
+    padding: 7px;
+}
+#tabela-professores-6M th {
+    background-color: rgb(151, 146, 146);
+    color: white;
+    font-weight: normal;
+    border: 1px lightgray solid;
+}
+#tabela-professores-6M td {
+    padding: 8px 6px 2px 6px;
+    border: 1px lightgray solid;
+}
+#tabela-professores-6M tr {
+    color: #09181F;
+}
+#tabela-professores-6M tr:hover {
+    background-color: #c6c7c7
+}
+#tabela-professores-6M td:nth-child(1) {
+    text-align: left;
+    padding-left: 4px;
+}
+#tabela-professores-6M td:nth-child(2) {
+    text-align: left;
+    padding-left: 4px;
+}
+
+#tabela-professores-6M img {
+    width: 15px;
+}
+
+/* =========== TABELA FUNCIONÁRIOS ========== */
+
+#tabela-funcionarios {
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 120px;
+    background-color: #fffbfb;
+}
+#tabela-funcionarios caption {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #09181F;
+    color: white;
+    padding: 7px;
+}
+#tabela-funcionarios th {
+    background-color: rgb(151, 146, 146);
+    color: white;
+    font-weight: normal;
+    border: 1px lightgray solid;
+}
+#tabela-funcionarios td {
+    padding: 8px 2px 2px 1px;
+    border: 1px lightgray solid;
+}
+#tabela-funcionarios tr {
+    color: #09181F;
+}
+#tabela-funcionarios tr:hover {
+    background-color: #c6c7c7
+}
+#tabela-funcionarios td:nth-child(1) {
+    text-align: left;
+    padding-left: 4px;
+}
+#tabela-funcionarios td:nth-child(2) {
+    text-align: left;
+    padding-left: 4px;
+}
+
+#calendar-icon {
+    width: 15px;
+}
+
+/* =========== TABELA ANIVERSARIANTES ========== */
+
+#tabela-aniversariantes, #profissoes {
+    margin: auto;
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 120px;
+    background-color: #fffbfb;
+    box-shadow: 3px 3px 12px gray;
+}
+#tabela-aniversariantes caption, #profissoes caption {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #09181F;
+    color: white;
+    padding: 7px;
+}
+#tabela-aniversariantes th, #profissoes th {
+    background-color: #979292;
+    color: white;
+    font-weight: normal;
+    border: 1px lightgray solid;
+}
+#tabela-aniversariantes td, #profissoes td {
+    padding: 8px 2px 2px 1px;
+    border: 1px lightgray solid;
+}
+#tabela-aniversariantes tr, #profissoes tr {
+    color: #09181F;
+}
+#tabela-aniversariantes tr:hover, #profissoes tr:hover{
+    background-color: #e8ecec
+}
+#tabela-aniversariantes td:nth-child(1), #profissoes td:nth-child(1) {
+    text-align: left;
+    padding-left: 4px;
+}
+#tabela-aniversariantes td:nth-child(2), #profissoes td:nth-child(2) {
+    text-align: left;
+    padding-left: 4px;
+}
+
+/* ======================= SEC - DOC =================== */
+
+#sec-doc {
+    background-color: whitesmoke;
+}
+
+#sec-doc .nome-titulo-secao {
+    color: #FF4538;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#sec-doc .sub-titulo-secao {
+    text-align: center;
+    color: #FF4538;
+    /* margin-top: 30px; */
+}
+
+
+/* ==============TABELA PANDEMIA ================== */
+
+#tabela-pandemia {
+    width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 120px;
+    background-color: #fffbfb;
+}
+
+#tabela-pandemia caption {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #FF4538;
+    color: white;
+    padding: 7px;
+}
+
+#tabela-pandemia td {
+    padding: 12px 0 2px 10px;
+    color: #09181F;
+    font-size: 14px;
+}
+
+#tabela-pandemia th {
+    padding: 6px 0;
+    background-color: #cbe5ff;
+    color: #09181F;
+    font-weight: normal;
+}
+
+#tabela-pandemia tr:nth-child(odd) {
+    background-color: rgb(250, 234, 234);
+}
+
+#tabela-pandemia a {
+    text-decoration: none;
+    color: #09181F;
+}
+
+#tabela-pandemia a:hover {
+    text-decoration: underline;
+}
+
+#tabela-pandemia tr:hover {
+    background-color: #cbe5ff;
+}
+
+
+/* ================== TABELA ATAS ================= */
+
+
+#tabela-atas-RA2021 {
+    width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 120px;
+    background-color: #fffbfb;
+    text-align: center;
+}
+
+#tabela-atas-RA2021 caption {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #FF4538;
+    color: white;
+    padding: 7px;
+}
+
+#tabela-atas-RA2021 td {
+    padding: 12px 0 2px 0;
+    color: #09181F;
+    font-size: 14px;
+}
+
+#tabela-atas-RA2021 th {
+    padding: 6px 0;
+    background-color: #cbe5ff;
+    color: #09181F;
+    font-weight: normal;
+}
+
+#tabela-atas-RA2021 tr:nth-child(odd) {
+    background-color: rgb(250, 234, 234);
+}
+
+#tabela-atas-RA2021 a {
+    text-decoration: none;
+    color: #09181F;
+}
+
+#tabela-atas-ra2021 a:hover {
+    text-decoration: underline;
+}
+
+#tabela-atas-ra2021 tr:hover {
+    background-color: #cbe5ff;
+}
+
+.aulas-por-dia {
+    margin: 50px auto;
+    box-shadow: 2px 2px 18px black;
+}
+
+
+#tabela-falecimentos {
+    width: 50%;
+    margin: 70px auto;
+}
+
+
+/* ======================PROFISSÕES====================== */
+#profissoes {
+    width: 45%;
+}
+
+
+/* ====================== FOOTER ============================== */
+
+footer {
+    background-color: #09181F;
+    width: 100%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+footer table {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer table th {
+    padding: 6px 0;
+}
+
+footer table td {
+    padding: 1px 0;
+}
+
+footer table td:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer p {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.conteiner-aulas {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.card {
+    padding: 16px 0;
+    width: 62px;
+    border-radius: 5px;
+    margin: 8px;
+    background-color: #09181F;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ============= M O D A L ============= */
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.nome_professor:hover {
+    cursor: pointer;
+    color: #BF1D34;
+}
+
+.bg-modal, .conteiner_horario_por_professor_6M {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    z-index: 20;
+    top: -100%;
+    display: block;
+    transition: 350ms;
+}
+
+.titulo-manha, .titulo-tarde {
+    color: black;   
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.titulo-manha {
+    width: 56%;
+    padding-left: 40px;
+}
+
+.titulo-tarde {
+    width: 44%;
+}
+
+#titulo-cards {
+    display: flex;
+    width: 63%;
+    margin: 0 auto;
+    justify-content: left;
+    margin-bottom: 8px;
+}
+
+.modal {
+    width: 55%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 140px auto 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: 350ms;
+}
+
+.conteiner-fechar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.modal span {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: rgb(1,8,20);
+    transition: 350ms;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
+    width: 20%;
+}
+
+.modal span:hover, .modal .zoom:hover {
+    background-color: dodgerblue;
+    color: white;
+    transition: 350ms;
+}
+
+.modal .zoom a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: rgb(1, 8, 20);
+    border-radius: 7px;
+    color: white;
+    text-shadow: gray;
+    font-size: 20px;
+    margin: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 24, 56);
+}
+
+.modal table {
+    margin: 45px auto;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid rgb(73, 91, 122);
+}
+
+.modal table caption {
+    padding: 8px;
+    background-color: rgb(1,8,20);
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.modal table th {
+    padding: 6px;
+    background-color: rgb(73, 91, 122);
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.modal table tr:nth-child(even) {
+    background-color: rgba(211, 211, 211, 0.932);
+}
+
+.modal table td {
+    padding: 6px;
+}
+
+.conteiner-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.pm, .pt {
+    background-color: dodgerblue;
+}
+
+.pm:hover, .pt:hover {
+    background-color: rgb(82, 164, 245);
+    box-shadow: 2px 2px 3px gray;
+}
+
+.gm:hover, .gt:hover {
+    background-color: #2a647c;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.conteiner-cards :nth-child(5) {
+    margin-left: 80px;
+}
+
+.professores {
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("imagens/fundo-professores-wide.jpg");
+    background-size: cover;
+}
+
+#tabela-nomes-professores {
+    width: 500px;
+    height: fit-content;
+    margin-top: 100px;
+    margin-left: 120px;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+
+#tabela-nomes-professores caption {
+    padding: 25px 0 10px 0;
+    border-bottom: 2px solid black;
+}
+
+#tabela-nomes-professores tr td {
+    text-align: left;
+}
+
+#tabela-nomes-professores td {
+    padding: 5px;
+}
+
+#tabela-nomes-professores a {
+    text-decoration: none;
+    text-shadow: whitesmoke;
+    color: black;
+}
+
+#tabela-nomes-professores a:hover {
+    color: red;
+}
