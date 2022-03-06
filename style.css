@@ -79,12 +79,14 @@ html {
     position: absolute;
 }
 
+/* Conteiner da imagem de capa da home */
 #banner-area {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/capa.jpg);
     background-size: cover;
 }
+
 
 #content-area {
     height: 100%;
@@ -103,28 +105,29 @@ html {
     text-align: center; 
     color: white;
     font-weight: 400;
+    /* border: 2px solid red; */
 }
 
 .link-menu-corpo {
     width: 200px;
-    border: 2.5px solid white;
+    background-color: #ffffff21;
+    border: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
+    font-weight: bold;
     font-weight: 500;
-    
     letter-spacing: .5px;
 }
 
 .link-menu-corpo:hover {
-    /* background-color: rgb(209, 205, 205); */
     background-color: white;
     color: #09181F;
     font-weight: 600;
-    border: 2px solid white;
-    /* border: 2px solid rgb(209, 205, 205); */
+    border: 1px solid white;
+    transition: all .3s ease-out;
 }
 
 .data-inicial p {
@@ -314,19 +317,59 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* TABELAS COMPENSAÇÃO E PLANTÃO SEXTA */
 
+#conteinerExtraclasse, #conteinerPlantaoSexta, #conteinerCompensacao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
+#tabelaextraclasse {
+    width: 800px;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 12px gray;
+}
+
+
+#tabelaextraclasse td {
+    padding: 10px 0 2px 0;
+    color: #09181F;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+#tabelaextraclasse th {
+    padding: 6px 0;
+    background-color: #cbe5ff;
+    color: #09181F;
+    font-weight: normal;
+}
+
+#tabelaextraclasse caption {
+    background-color: #09181F;
+    color: white;
+    padding: 16px 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#tabelaextraclasse tr:nth-child(odd) {
+    background-color: #dfecfa;
+}
+
+#tabelaextraclasse tr:hover {
+    background-color: gray;
+    color: #fff;
+}
 
 #compensacao {
     width: 650px;
@@ -341,7 +384,7 @@ html {
 }
 
 #plantaodesexta {
-    width: 650px;
+    width: 400px;
     background-color: white;
     color: #09181F;
     border-collapse: collapse;
@@ -1133,3 +1176,11 @@ button:hover {
 #tabela-nomes-professores a:hover {
     color: red;
 }
+
+/* 
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+} */

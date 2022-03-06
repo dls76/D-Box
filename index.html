@@ -14,11 +14,15 @@
     <script src="https://kit.fontawesome.com/8abf0ff8b8.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="dataAtual()">
 
+<body>
+
+    <!-- Imagem da home -->
 <img src="imagens/logo.jpg" alt="logo" id="logo" style="width: 100px;">
 
+<!-- Menu principal -->
 <nav class="wrapper" id="wrapper">  
+    
     <ul>
         <li><a href="#">CALENDÁRIOS</a>
             <ul>
@@ -31,16 +35,16 @@
         
         <li><a href="#">HORÁRIOS</a>
             <ul>    
-                <li>Infantil ao 5º
+                <li>Infantil-F1
                     <ul>
-                        <li><a href="/horarios/horariosturmascompletomanhaP5.pdf" target="_blank">Turmas manhã</a></li>
-                        <li><a href="/horarios/horariosturmascompletotardeP5.pdf" target="_blank">Turmas tarde</a></li>
-                        <li><a href="/horarios/horarioscontraturno.pdf" target="_blank">Contraturno</a></li>
-                        <li><a href="/horarios/horariosrecreioeparqueP5.pdf" target="_blank">Recreios e Parque</a></li>
+                        <li><a href="horarios/horariosturmascompletomanhaP5.pdf" target="_blank">Turmas manhã</a></li>
+                        <li><a href="horarios/horariosturmascompletotardeP5.pdf" target="_blank">Turmas tarde</a></li>
+                        <li><a href="horarios/horarioscontraturno.pdf" target="_blank">Contraturno</a></li>
+                        <li><a href="horarios/horariosrecreioeparqueP5.pdf" target="_blank">Recreios e Parque</a></li>
                         <li><a href="horarios/horariosaulistasP5.pdf" target="_blank">Aulistas</a></li>
                     </ul>
                 </li>        
-                <li>Fund. 2 ao Médio
+                <li>F2-Médio
                     <ul>
                         <li><a href="horarios/horarioperiodos6M.pdf" target="_blank">Períodos</a></li>        
                         <li><a href="horarios/horarioprofsresumido6M.pdf" target="_blank">Professores</a></li>        
@@ -48,53 +52,32 @@
                         <li><a href="horarios/horarioturmastarde6M.pdf" target="_blank">Turmas Tarde</a></li>
                     </ul>
                     </li>
-                <!-- <li><a href="#sec-aulas">Horários</a></li>         -->
-                <!-- <li><a href="#sec-salas">Salas</a></li> -->
-                <!-- <li><a href="#sec-hor">Escalas</a> -->
-                    <!-- <ul> -->
-                        <!-- <li><a href="#compensacao">Compensação</a></li> -->
-                        <!-- <li><a href="#reforços">Reforços</a></li> -->
-                    <!-- </ul> -->
-                <!-- </li> -->
-                <!-- <li><a href="calendário.html" target="_blank">Calend. Teste</a></li> -->
+
+                    <li><a href="#conteinerExtraclasse">Extraclasse</a></li>
+
             </ul>
         </li>
 
         <li><a href="#">PESSOAS</a>
             <ul>
-                <!-- <li><a href="#tabela-adm">Administração</a></li> -->
-                <!-- <li><a href=#>Professores</a> -->
-                    <!-- <ul> -->
-                        <!-- <li><a href="#tabela-professores-infantil-F1">Inf. ao 5º</a></li>
-                        <li><a href="#sec-pes">6º ao Médio</a></li> -->
-                    <!-- </ul> -->
-                <!-- </li> -->
-                <!-- <li><a href="#tabela-funcionarios">Funcionários</a></li> -->
                 <li><a href="#tabela-tutores-manha">Tutores</a></li>
-                <!-- <li><a href="#tabela-aniversariantes">Aniversariantes</a></li> -->
-                <!-- <li><a href="#profissoes">Profissões</a></li> -->
             </ul>
         </li>
 
         <li><a href="#">ESCALAS</a>
             <ul>
-                <li><a href="#sec-hor">Compensação</a></li>
+                <li><a href="#conteinerCompensacao">Compensação</a></li>
+                <li><a href="#conteinerPlantaoSexta">Plantão Sexta</a></li>
             </ul>
         </li>
-     
-        <!-- <li><a href="#sec-doc">DOCUMENTOS</a>
-            <ul>
-                <li><a href="#tabela-atas-RA2021">RAs</a></li>
-                <li><a href="#">Legais</a></li>
-                <li><a href="#tabela-pandemia">Pandemia</a></li>
-                <li><a href="#tabela-comunicados">Comunicados</a></li>
-            </ul>
-        </li> -->
 
         <li id="link-emergencias"><a href="https://sistemas.usb.org.br/ama/index.php" target="_blank" >URGÊNCIAS</a></li>
+
     </ul>
+
 </nav>
 
+<!-- Menu do corpo da página -->
 <div id="banner-area" >
     <div id="content-area">
         <div id="content">
@@ -105,22 +88,11 @@
 
             <a href="https://app.powerbi.com/home?noSignUpCheck=1&redirectedFromSignup=1&username=douglas.leal@usb.educadventista.org&AutomaticLogin=true" class="link-menu-corpo" target="_blank">Power BI</a>
 
-            <!-- <a href="https://docs.google.com/spreadsheets/d/1nG-KLAPd1wJqTPkmwfKyquP9I3U7d_2KfbbUvxW3MEo/edit#gid=1018608073" target="_blank" class="link-menu-corpo"><div class="item-menu-corpo">Planilha</div></a> -->
-            
-            <!-- <a href="https://drive.google.com/file/d/10Suj2JuLvjmZjmpP1l6C5zkrRwpv2st5/view?usp=sharing" target="_blank" class="link-menu-corpo"><div class="item-menu-corpo">Cartão Veteranos</div></a> -->
-
-
-            
-            <!-- <h1 id="data-atual"></h1>
-            <h2 id="hora-atual"></h2> -->
-            <!-- <div class="menu-corpo"> -->  
-            <!-- </div> -->
-
         </div>
     </div>      
 </div>
 
-
+<!-- Botão de voltar ao topo -->
 <a id="topo" href="#wrapper">Top</a>
 
 <!-- <section id="sec-aulas">
@@ -1338,13 +1310,47 @@
 
 </section>
 
+
+
 <section id="sec-hor">    
 
-    <div class="titulo-secao">
-        <p class="nome-titulo-secao">Escalas</p>
-    </div>
+<div id="conteinerExtraclasse">
 
+<table id="tabelaextraclasse">
+    
+    <caption id="extraclasse">Atividades Extraclasse</caption>
+    <th>Modalidade</th>
+    <th>Público, Dias e Horários</th>
 
+    <tr>
+        <td>Futsal</td>
+        <td>Segunda e Quarta (2º ao 4º, 17h40 - 18h45); Terça e Quinta (5º ao 8º, 17h40 - 18h45).</td>
+    </tr>
+    <tr>
+        <td>Volei</td>
+        <td>Terça e Quinta (11h40 as 12h45).</td>
+    </tr>
+    <tr>
+        <td>Ginástica Rítmica</td>
+        <td>Terça e Quinta (1º ao 6º, 11h40 - 12h45 e 17h40 - 18h45). </td>
+    </tr>
+    <tr>
+        <td>Crosskids</td>
+        <td>Segunda e Quarta (2º ao 5º, 17h40 - 18h45).</td>
+    </tr>
+    <tr>
+        <td>Robótica</td>
+        <td>Segunda (17h40 - 19h10); Terça (11h45 - 13h15); Terça (14h - 15h30).</td>
+    </tr>
+    <tr>
+        <td>Coral Novo</td>
+        <td>Quarta (6º ao Médio, 11h40 às 12h30)</td>
+    </tr>
+</table>
+
+</div>
+
+<div id="conteinerCompensacao">
 
 <table id="compensacao">
     
@@ -1454,16 +1460,10 @@
     </tr>
 </table>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+</div>
+
+
+<div id="conteinerPlantaoSexta">
 
 <table id="plantaodesexta">
     
@@ -1471,122 +1471,123 @@
 
     <th style="width: 60px">Dia</th>
     <th style="width: 60px">Mês</th>
-    <th style="width: 230px">Grupo em compensação</th>
+    <!-- <th style="width: 230px">Grupo em compensação</th> -->
     <th>Plantonista</th>
 
     <tr>
         <td>18</td>
         <td>Fev</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Rudi</td>
     </tr>
 
     <tr>
         <td>25</td>
         <td>Fev</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Douglas</td>
     </tr>
 
     <tr>
         <td>4</td>
         <td>Mar</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Thiago</td>
     </tr>
 
     <tr>
         <td>11</td>
         <td>Mar</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Giselle</td>
     </tr>
 
     <tr>
         <td>18</td>
         <td>Mar</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Danielle</td>
     </tr>
 
     <tr>
         <td>25</td>
         <td>Mar</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Karol</td>
     </tr>
 
     <tr>
         <td>1</td>
         <td>Abr</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Denise</td>
     </tr>
 
     <tr>
         <td>8</td>
         <td>Abr</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Eduardo</td>
     </tr>
 
     <tr>
         <td>29</td>
         <td>Abr</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Sandra</td>
     </tr>
 
     <tr>
         <td>6</td>
         <td>Mai</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Giselle</td>
     </tr>
 
     <tr>
         <td>13</td>
         <td>Mai</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Cida</td>
     </tr>
 
     <tr>
         <td>20</td>
         <td>Mai</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Roberta</td>
     </tr>
 
     <tr>
         <td>27</td>
         <td>Mai</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Rudi</td>
     </tr>
 
     <tr>
         <td>3</td>
         <td>Jun</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Douglas</td>
     </tr>
 
     <tr>
         <td>10</td>
         <td>Jun</td>
-        <td>1</td>
+        <!-- <td>1</td> -->
         <td>Thiago</td>
     </tr>
 
     <tr>
         <td>24</td>
         <td>Jun</td>
-        <td>2</td>
+        <!-- <td>2</td> -->
         <td>Eduardo</td>
     </tr>
 </table>
 
+</div>
 
 
 
@@ -3614,7 +3615,7 @@
             <td>Guilherme Perpétuo</td>
             <td>TEA</td>
             <td><i class="fa-solid fa-user"></i></td>
-            <td>Sarita</td>
+            <td></td>
             <td>Sandra</td>
         </tr>
 
@@ -3623,7 +3624,7 @@
             <td>Henrique Abe</td>
             <td>TEA</td>
             <td><i class="fa-solid fa-user"></i></td>
-            <td>Sarita</td>
+            <td></td>
             <td>Sandra</td>
         </tr>
 
@@ -3632,7 +3633,7 @@
             <td>Gabriel Zela</td>
             <td>TEA</td>
             <td><i class="fa-solid fa-baby"></i></td>
-            <td>Sarita</td>
+            <td></td>
             <td>Sandra</td>
         </tr>
 
@@ -3751,7 +3752,7 @@
             <td>Diogo</td>
             <td>Down</td>
             <td><i class="fa-solid fa-baby"></i></td>
-            <td>?</td>
+            <td>Sarita</td>
             <td>Denise</td>
         </tr>
 
@@ -4270,7 +4271,7 @@
             <th>Tarde</th>
             <tr>
                 <td rowspan="4">1</td>
-                <td>1</td>
+                <!-- <td>1</td> -->
                 <td>61</td>
                 <td>62</td>
             </tr>
@@ -4786,7 +4787,7 @@
 <br>
 <br>
 <br>
-    <table>
+    <!-- <table>
         <th>ORGANIZAÇÃO</th>
         <th>PESSOAS</th>
         <th>DOCUMENTOS</th>
@@ -4827,7 +4828,7 @@
             <td></td>
             <td></td>
         </tr>
-    </table>
+    </table> -->
     <p>2022 - Colégio Adventista Alto Boqueirão</p>
 
     <br>

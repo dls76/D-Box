@@ -1,19 +1,19 @@
 function dataAtual () {
-    let data = new Date();
-    let diaMes = data.getDate();
-    let ano = data.getFullYear();
+    
+    let data = new Date()
+    let diaMes = data.getDate()
+    let diaSemana = data.getDay()
+    let mes = data.getMonth()
+    let ano = data.getFullYear()
+    
+    const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
-    let diaSemana = new Array ('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado');
-    let mes = new Array ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+    const dSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
 
-    let hora = data.getHours();
-    let minutos = data.getMinutes();
+    return document.querySelector('dataAtual').innerHTML = (`Hoje é ${dSemana[diaSemana]}, ${diaMes} de ${meses[mes]} de ${ano}.`)
 
-    document.getElementById('data-atual').innerHTML = 
-        diaSemana[data.getDay()] + ', ' + diaMes + " de " + mes[data.getMonth()] + " de " + ano;
-    document.getElementById('hora-atual').innerHTML = 
-        hora + ':' + minutos;
 }
+
 
 // PRÉ 3//
 function abrirModal3A() {
