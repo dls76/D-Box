@@ -19,31 +19,6 @@ html {
     display: none;
 }
 
-@media (max-width: 990px) {
-
-    #menu {
-        display: none;
-    }
-
-    #btn-mobile {
-        display: block;
-    }
-
-    #content {  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        font-weight: 400;
-        /* border: 2px solid red; */
-    }
-
-    #content a {
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-}
-
 #capa {
     width: 100%;
 }
