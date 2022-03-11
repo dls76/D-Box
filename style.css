@@ -276,8 +276,19 @@ html {
     border: 0.5px solid #09181F;
 }
 
+.table-conteiner {
+    overflow-x: auto;
+}
+
+.table-conteiner table {
+    width: 800px;
+    /* height: 400px; */
+    color: #000;
+}
+
 .tabela-tutores  {
-    width: 650px;
+    width: 600px;
+    /* height: 200px; */
     background-color: white;
     color: #09181F;
     margin: auto;
@@ -1187,10 +1198,25 @@ button:hover {
     color: red;
 }
 
-/* 
-@media only screen and (max-width: 600px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-      }
-} */
+.tabela {
+    display: block;
+    border-collapse: collapse;
+    max-height: 400px;
+    overflow-x: hidden;
+}
+
+.tabela th,
+.tabela td {
+    padding: 15px;
+    border: 1px solid #cccccc;
+    max-width: 150px;
+}
+
+.tabela thead {
+    background-color: #4CAF40;
+}
+
+.tabela thead tr td {
+    text-align: left;
+    color: #ffffff;
+}
