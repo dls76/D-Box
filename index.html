@@ -13,27 +13,15 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');</style>
     <script src="https://kit.fontawesome.com/8abf0ff8b8.js" crossorigin="anonymous"></script>
 </head>
-
-
 <body>
 
-
-
-
 <header id="header">
-    
-
     <!-- Imagem da home -->
     <img src="imagens/logo.jpg" alt="logo" id="logo" style="width: 100px;">
-
-
 
     <!-- Menu principal -->
     <nav class="wrapper" id="wrapper">  
         
-    <button id="btn-mobile">Menu</button>
-
-
         <ul id="menu">
             
             <li><a href="#">CALENDÁRIOS</a>
@@ -45,28 +33,16 @@
                 </ul>
             </li>
             
-            <li><a href="#">HORÁRIOS</a>
+            <li><a href="#sec-horarios">HORÁRIOS</a>
                 <ul>    
-                    <li>Infantil-F1
-                        <ul>
-                            <li><a href="horarios/horariosturmascompletomanhaP5.pdf" target="_blank">Turmas manhã</a></li>
-                            <li><a href="horarios/horariosturmascompletotardeP5.pdf" target="_blank">Turmas tarde</a></li>
-                            <li><a href="horarios/horarioscontraturno.pdf" target="_blank">Contraturno</a></li>
-                            <li><a href="horarios/horariosrecreioeparqueP5.pdf" target="_blank">Recreios e Parque</a></li>
-                            <li><a href="horarios/horariosaulistasP5.pdf" target="_blank">Aulistas</a></li>
-                        </ul>
-                    </li>        
-                    <li>F2-Médio
-                        <ul>
-                            <li><a href="horarios/horarioperiodos6M.pdf" target="_blank">Períodos</a></li>        
-                            <li><a href="horarios/horarioprofsresumido6M.pdf" target="_blank">Professores</a></li>        
-                            <li><a href="horarios/horarioturmasmanha6M.pdf" target="_blank">Turmas Manhã</a></li>        
-                            <li><a href="horarios/horarioturmastarde6M.pdf" target="_blank">Turmas Tarde</a></li>
-                        </ul>
-                        </li>
-
-                        <li><a href="#conteinerExtraclasse">Extraclasse</a></li>
-
+                    <li>Infantil-F1</li>        
+                    <li>F2-Médio</li>
+                    <li><!-- Extraclasse-->
+                        <a href="extraclasse.pdf" target="_blank">Extraclasse</a>
+                    </li>
+                    <li><!-- Reforço-->
+                        <a href="reforco.pdf" target="_blank">Reforço</a>
+                    </li>
                 </ul>
             </li>
 
@@ -80,6 +56,7 @@
                 <ul>
                     <li><a href="#conteinerCompensacao">Compensação</a></li>
                     <li><a href="#conteinerPlantaoSexta">Plantão Sexta</a></li>
+                    <li><a href="#conteinerPlantaoDiario">Plantão Diário</a></li>
                 </ul>
             </li>
 
@@ -88,6 +65,7 @@
         </ul>
 
     </nav>
+
 </header>
 
 
@@ -113,1519 +91,320 @@
 <!-- Botão de voltar ao topo -->
 <a id="topo" href="#wrapper">Top</a>
 
-<!-- <section id="sec-aulas">
-
-    <header><h1>HORÁRIOS DE AULAS</h1></header>
-
-    <div class="conteiner-aulas">
-
-        <div class="conteiner-cards" id="titulo-cards">
-            <div class="titulo-manha">Manhã</div>
-            <div class="titulo-tarde">Tarde</div>
-        </div>
-        <div class="conteiner-cards">
-            <div  class="card pm" id="turma5A" onclick="abrirModal5A()">5A</div>
-            <div  class="card pm" id="turma11" onclick="abrirModal11()">11</div>
-            <div  class="card pm" id="turma21" onclick="abrirModal21()">21</div>
-            <div  class="card pm" id="turma31" onclick="abrirModal31()">31</div>
-            <div  class="card pt" id="turma3A" onclick="abrirModal3A()">3A</div>
-            <div  class="card pt" id="turma4B" onclick="abrirModal4B()">4B</div>
-            <div  class="card pt" id="turma5B" onclick="abrirModal5B()">5B</div>
-            <div  class="card pt" id="turma5C" onclick="abrirModal5C()">5C</div>    
-        </div>
-        <div class="conteiner-cards">
-            <div  class="card pm" id="turma41" onclick="abrirModal41()">41</div>
-            <div  class="card pm" id="turma42" onclick="abrirModal42()">42</div>
-            <div  class="card pm" id="turma51" onclick="abrirModal51()">51</div>
-            <div  class="card gm" id="turma61" onclick="abrirModal61()">61</div>
-            <div  class="card pt" id="turma12" onclick="abrirModal12()">12</div>
-            <div  class="card pt" id="turma13" onclick="abrirModal13()">13</div>
-            <div  class="card pt" id="turma22" onclick="abrirModal22()">22</div>
-            <div  class="card pt" id="turma23" onclick="abrirModal23()">23</div>
-        </div>
-        <div class="conteiner-cards">
-            <div  class="card gm" id="turma71" onclick="abrirModal71()">71</div>
-            <div  class="card gm" id="turma72" onclick="abrirModal72()">72</div>
-            <div  class="card gm" id="turma81" onclick="abrirModal81()">81</div>
-            <div  class="card gm" id="turma82" onclick="abrirModal82()">82</div>
-            <div  class="card pt" id="turma32" onclick="abrirModal32()">32</div>
-            <div  class="card pt" id="turma33" onclick="abrirModal33()">33</div>
-            <div  class="card pt" id="turma43" onclick="abrirModal43()">43</div>
-            <div  class="card pt" id="turma44" onclick="abrirModal44()">44</div>
-
-        </div>
-        <div class="conteiner-cards">
-            <div  class="card gm" id="turma91" onclick="abrirModal91()">91</div>
-            <div  class="card gm" id="turma92" onclick="abrirModal92()">92</div>
-            <div  class="card gm" id="turma111" onclick="abrirModal111()">111</div>
-            <div  class="card gm" id="turma121" onclick="abrirModal121()">121</div>
-            <div  class="card pt" id="turma52" onclick="abrirModal52()">52</div>
-            <div  class="card pt" id="turma53" onclick="abrirModal53()">53</div>
-            <div  class="card gt" id="turma62" onclick="abrirModal62()">62</div>
-            <div  class="card gt" id="turma61" onclick="abrirModal63()">63</div>
-        </div>
-        <div class="conteiner-cards">
-            <div  class="card gm" id="turma131" onclick="abrirModal131()">131</div>
-            <div  class="card null gm">00</div>
-            <div  class="card null gm">00</div>
-            <div  class="card null gm">00</div>
-            <div  class="card gt" id="turma73" onclick="abrirModal73()">73</div>
-            <div  class="card gt" id="turma83" onclick="abrirModal83()">83</div>
-            <div  class="card gt" id="turma93" onclick="abrirModal93()">93</div>
-            <div  class="card null gt">00</div>
-        </div>
-    </div>
-    
-    <div class="bg-modal" id="modal3A">
-        <div class="modal">
-            <table id="horario3A">
-                <caption>Turma 3A</caption>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal3A()">Fechar</span>
-                <span class="zoom" onclick="fecharModal3A()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal4B">
-        <div class="modal">
-            <table id="horario4B">
-                <caption>Turma 4B</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal4B()">Fechar</span>
-                <span class="zoom" onclick="fecharModal4B()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal5A">
-        <div class="modal">
-            <table id="horario5A">
-                <caption>Turma 5A</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal5A()">Fechar</span>
-                <span class="zoom" onclick="fecharModal5A()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal5B">
-        <div class="modal">
-            <table id="horario5B">
-                <caption>Turma 5B</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal5B()">Fechar</span>
-                <span class="zoom" onclick="fecharModal5B()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal5C">
-        <div class="modal">
-            <table id="horario5C">
-                <caption>Turma 5C</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal5C()">Fechar</span>
-                <span class="zoom" onclick="fecharModal5C()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal11">
-        <div class="modal">
-            <table id="horario11">
-                <caption>Turma 11</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal11()">Fechar</span>
-                <span class="zoom" onclick="fecharModal11()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal12">
-        <div class="modal">
-            <table id="horario12">
-                <caption>Turma 12</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal12()">Fechar</span>
-                <span class="zoom" onclick="fecharModal12()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal13">
-        <div class="modal">
-            <table id="horario13">
-                <caption>Turma 13</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal13()">Fechar</span>
-                <span class="zoom" onclick="fecharModal13()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal21">
-        <div class="modal">
-            <table id="horario21">
-                <caption>Turma 21</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal21()">Fechar</span>
-                <span class="zoom" onclick="fecharModal21()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal22">
-        <div class="modal">
-            <table id="horario22">
-                <caption>Turma 22</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal22()">Fechar</span>
-                <span class="zoom" onclick="fecharModal22()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal23">
-        <div class="modal">
-            <table id="horario23">
-                <caption>Turma 23</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal23()">Fechar</span>
-                <span class="zoom" onclick="fecharModal23()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal31">
-        <div class="modal">
-          <table id="horario31">
-                <caption>Turma 31</caption>
-                
-                
-            </table>
-          <div class="conteiner-fechar">
-              <span class="close" onclick="fecharModal31()">Fechar</span>
-                <span class="zoom" onclick="fecharModal31()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal32">
-        <div class="modal">
-            <table id="horario32">
-                <caption>Turma 32</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal32()">Fechar</span>
-                <span class="zoom" onclick="fecharModal32()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal33">
-        <div class="modal">
-            <table id="horario33">
-                <caption>Turma 33</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal33()">Fechar</span>
-                <span class="zoom" onclick="fecharModal33()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal41">
-        <div class="modal">
-            <table id="horario41">
-                <caption>Turma 41</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal41()">Fechar</span>
-                <span class="zoom" onclick="fecharModal41()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal42">
-        <div class="modal">
-            <table id="horario42">
-                <caption>Turma 42</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal42()">Fechar</span>
-                <span class="zoom" onclick="fecharModal42()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal43">
-        <div class="modal">
-            <table id="horario43">
-                <caption>Turma 43</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal43()">Fechar</span>
-                <span class="zoom" onclick="fecharModal43()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal44">
-        <div class="modal">
-            <table id="horario44">
-                <caption>Turma 44</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal44()">Fechar</span>
-                <span class="zoom" onclick="fecharModal44()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal51">
-        <div class="modal">
-            <table id="horario51">
-                <caption>Turma 51</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal51()">Fechar</span>
-                <span class="zoom" onclick="fecharModal51()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal52">
-        <div class="modal">
-            <table id="horario52">
-                <caption>Turma 52</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal52()">Fechar</span>
-                <span class="zoom" onclick="fecharModal52()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal53">
-        <div class="modal">
-            <table id="horario53">
-                <caption>Turma 53</caption>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal53()">Fechar</span>
-                <span class="zoom" onclick="fecharModal53()">Assistir Zoom</span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal61">
-        <div class="modal">
-            <table id="horario61">
-                <caption>Turma 61</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Geo/Wilson</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Mat/Denise</td>
-                    <td>EFI</td>
-                    <td>Por/Elaine</td>
-                </tr>
-                <tr>
-                    <td>Art/Caroline</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Rel/Jonathan</td>
-                    <td>His/Wilson</td>
-                    <td>Por/Elaine</td>
-                </tr>
-                <tr>
-                    <td>Rel/Jonathan</td>
-                    <td>Mat/Denise</td>
-                    <td>Mat/Denise</td>
-                    <td>Por/Elaine</td>
-                    <td>Red/Elaine</td>
-                </tr>
-                <tr>
-                    <td>His/Wilson</td>
-                    <td>Ing/Denis</td>
-                    <td>His/Wilson</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                <tr>
-                    <td>Ing/Denis</td>
-                    <td>Art/Caroline</td>
-                    <td>Por/Elaine</td>
-                    <td>Cie/Alessandra</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal61()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/87102738461?pwd=OVFGRHROSVh5bldjTW5FNEJCbnFidz09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal62">
-        <div class="modal">
-            <table id="horario62">
-                <caption>Turma 62</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>His/Wilson</td>
-                    <td>Art/Caroline</td>
-                    <td>Red/Stefanie</td>
-                    <td>Rel/Jonathan</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Ing/Denise</td>
-                    <td>Cie/Alessandra</td>
-                    <td>His/Wilson</td>
-                    <td>Por/Stefanie</td>
-                    <td>Geo/Wilson</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Art/Caroline</td>
-                    <td>His/Wilson</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                <tr>
-                    <td>MAt/Denise</td>
-                    <td>Por/Stefanie</td>
-                    <td>MAt/Denise</td>
-                    <td>Geo/Wilson</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                <tr>
-                    <td>Lit/Stefanie</td>
-                    <td>Ing/Denis</td>
-                    <td>Por/Stefanie</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Rel/Jonathan</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal62()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/88242582944?pwd=TkYvMkMwQ0E2Y1hud2MyaDJPeS9PQT09" target="_blank">Assistir zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal63">
-        <div class="modal">
-            <table id="horario63">
-                <caption>Turma 63</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-            <tr>
-                <td>Ing/Denis</td>
-                <td>Por/Stefanie</td>
-                <td>His/Wilson</td>
-                <td>Cie/Alessandra</td>
-                <td>Mat/Denise</td>
-            </tr>
-            <tr>
-                <td>Geo</td>
-                <td>Por/Stefanie</td>
-                <td>Red/Stefanie</td>
-                <td>Cie/Alessandra</td>
-                <td>Mat/Denise</td>
-            </tr>
-            <tr>
-                <td>Art/Caroline</td>
-                <td>His/Wilson</td>
-                <td>Mat/Denise</td>
-                <td>Por/Stefanie</td>
-                <td>Rel/Jonathan</td>
-            </tr>
-            <tr>
-                <td>EFI</td>
-                <td>Ing/Denis</td>
-                <td>Rel/Jonathan</td>
-                <td>Lit/Stefanie</td>
-                <td>His/Wilson</td>
-            </tr>
-            <tr>
-                <td>Mat/Denise</td>
-                <td>Cie/Alessandra</td>
-                <td>Art/Caroline</td>
-                <td>Geo/Wilson</td>
-                <td>EFI</td>
-            </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal63()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/88657942667?pwd=OWZFbXJTKzNlL1EvUFYxVG9ESjVHUT09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal71">
-        <div class="modal">
-            <table id="horario71">
-                <caption>Turma 71</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>His/Eliada</td>
-                    <td>Mat/Denise</td>
-                    <td>Art/Glauciele</td>
-                    <td>Cie/Alessandra</td>
-                    <td>His/Eliada</td>
-                </tr>
-                <tr>
-                    <td>Geo/Wilson</td>
-                    <td>MAt/Denise</td>
-                    <td>Ing/Scheyla</td>
-                    <td>EFI</td>
-                    <td>Por/Elaine</td>
-                </tr>
-                <tr>
-                    <td>Red/Elaine</td>
-                    <td>Ing/Scheyla</td>
-                    <td>His/Eliada</td>
-                    <td>Art/Glauciele</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                <tr>
-                    <td>Por/Elaine</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Por/Elaine</td>
-                    <td>Rel/Jonathan</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Geo/Wilson</td>
-                </tr>
-                <tr>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal71()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/85000946359?pwd=b3doL3F6M0JQOGhvRjBSOEhoeU9FUT09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal72">
-        <div class="modal">
-            <table id="horario72">
-                <caption>Turma 72</caption>
-                <th>Seg</th>
-                <th>Ter</th>
-                <th>Qua</th>
-                <th>Qui</th>
-                <th>Sex</th>
-                <tr>
-                    <td>Ing/Shceyla</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Geo/Wilson</td>
-                    <td>Por/Elaine</td>
-                    <td>His/Wilson</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>CIe/Alessandra</td>
-                    <td>Mat/Denise</td>
-                    <td>Art/Glauciele</td>
-                    <td>Art/Glauciele</td>
-                </tr>
-                <tr>
-                    <td>Geo/Wilson</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Cie/Alessandra</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Rel/Jonathan</td>
-                    <td>Mat/Denise</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Red/Elaine</td>
-                    <td>Por/Elaine</td>
-                </tr>
-                <tr>
-                    <td>Por/Elaine</td>
-                    <td>Mat/Denise</td>
-                    <td>His/Wilson</td>
-                    <td>His/Wilson</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal72()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/81986306890?pwd=blAvWDd6SnRMQnZ2MDQ3bHMvUFNXZz09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal73">
-        <div class="modal">
-            <table id="horario73">
-                <caption>Turma 73</caption>
-                <th>Seg</th>
-                <th>Ter</th>
-                <th>Qua</th>
-                <th>Qui</th>
-                <th>Sex</th>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>His/Wilson</td>
-                    <td>Mat/Denise</td>
-                    <td>Por/Stefanie</td>
-                    <td>His/Wilson</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>Art/Caroline</td>
-                    <td>Mat/Denise</td>
-                    <td>Ing/Scheyla</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Lit/Stefanie</td>
-                    <td>Red/Stefanie</td>
-                    <td>Por/Stefanie</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Geo/Wilson</td>
-                </tr>
-                <tr>
-                    <td>Art/Caroline</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Por/Stefanie</td>
-                    <td>Cie/Alessandra</td>
-                    <td>Rel/Jonathan</td>
-                </tr>
-                <tr>
-                    <td>Geo/Wilson</td>
-                    <td>Ing/Scheyla</td>
-                    <td>His/Wilson</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal73()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/84741745985?pwd=RHphd0trV1M3alR4VzFHMWtqQnlWdz09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal81">
-        <div class="modal">
-            <table id="horario81">
-                <caption>Turma 81</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>His/Eliada</td>
-                    <td>Red/Eleine</td>
-                    <td>Geo/Wilson</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>EFI</td>
-                    <td>Por/Elaine</td>
-                    <td>Pr/Elaine</td>
-                    <td>Rel/Jonathan</td>
-                </tr>
-                <tr>
-                    <td>Cie/Liamara</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Geo/Wilson</td>
-                    <td>Cie/Liamara</td>
-                    <td>Art/Glauciele</td>
-                </tr>
-                <tr>
-                    <td>His/Eliada</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Mar/Denise</td>
-                    <td>Cie/Liamara</td>
-                    <td>His/Eliada</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Art/Glauciele</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Por/Elaine</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal81()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/84662445084?pwd=K1dHVEp4NWVlNFBmeHV1ZnkzKzJ6Zz09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal82">
-        <div class="modal">
-            <table id="horario82">
-                <caption>Turma 82</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Por/Elaine</td>
-                    <td>EFI</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Cie/Liamara</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Red/Elaine</td>
-                    <td>His/Eliada</td>
-                    <td>Geo/Wilson</td>
-                    <td>Cie/Liamara</td>
-                    <td>Mat/Denise</td>
-                </tr>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>Cie/Liamara</td>
-                    <td>Por/Elaine</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Geo/Wilson</td>
-                </tr>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Art/Glauciele</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Art/Glauciele</td>
-                </tr>
-                <tr>
-                    <td>His/Eliada</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Mat/Denise</td>
-                    <td>Por/Elaine</td>
-                    <td>His/Eliada</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal82()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/83352766081?pwd=cjd1aGFZVWc0WDBHR2ZCQ2lpb0ljUT09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal83">
-        <div class="modal">
-            <table id="horario83">
-                <caption>Turma 83</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>EFI</td>
-                    <td>Mat/Denise</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Geo/Wilson</td>
-                    <td>Rel/Jonathan</td>
-                </tr>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>Red/Jaqueline</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Geo/Wilson</td>
-                    <td>Cie/Liamara</td>
-                </tr>
-                <tr>
-                    <td>Mat/Denise</td>
-                    <td>Ing/Scheyla</td>
-                    <td>His/Wilson</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Cie/Liamara</td>
-                </tr>
-                <tr>
-                    <td>Lit/Stefanie</td>
-                    <td>His/Wilson</td>
-                    <td>Art/Caroline</td>
-                    <td>Rel/Jonathan</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Art/Caroline</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Mat/Denise</td>
-                    <td>Cie/Liamara</td>
-                    <td>His/Wilson</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal83()">Fechar</span>
-                <span class="zoom" ><a href="https://educadventista.zoom.us/j/83796749658?pwd=dGpzSVA2VTdxVXFqZTE2aTd5bUV4QT09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal91">
-        <div class="modal">
-            <table id="horario91">
-                <caption>Turma 91</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Mat/Hermes</td>
-                    <td>Cie/Liamara</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Art/Glauciele</td>
-                    <td>Cie/Liamara</td>
-                </tr>
-                <tr>
-                    <td>Mat/Hermes</td>
-                    <td>Cie/Liamara</td>
-                    <td>Por/Jackelini</td>
-                    <td>Rel/Jonathan</td>
-                    <td>His/Eliada</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Art/Glauciele</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                <tr>
-                    <td>Cie/Liamara</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Red/Jaqueline</td>
-                    <td>Geo/Wilson</td>
-                    <td>Geo/Wilson</td>
-                </tr>
-                <tr>
-                    <td>Por/Jaqueline</td>
-                    <td>Mat/Hermes</td>
-                    <td>His/Eliada</td>
-                    <td>EFI</td>
-                    <td>Rel/Jonathan</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal91()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/82230062747?pwd=TVNDSmtNTnR4SFlXdUZUcWpHdkRWZz09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal92">
-        <div class="modal">
-            <table id="horario92">
-                <caption>Turma 92</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Red/Jaqueline</td>
-                    <td>Por/Jaqueline</td>
-                    <td>His/Eliada</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Rel/Jonathan</td>
-                </tr>
-                <tr>
-                    <td>Ing/Scheyla</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Art/Glauciele</td>
-                    <td>Lit/Stefanie</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Mat/Hermes</td>
-                    <td>EFI</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Geo/Wilson</td>
-                    <td>His/Eliada</td>
-                </tr>
-                <tr>
-                    <td>MAt/Hermes</td>
-                    <td>Cie/Liamara</td>
-                    <td>MAt/Hermes</td>
-                    <td>Art/GLauciele</td>
-                    <td>Cie/Liamara</td>
-                </tr>
-                <tr>
-                    <td>Geo/Wilson</td>
-                    <td>Cie;Liamara</td>
-                    <td>Mat/Hermes</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Cie/Liamara</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal92()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/81283183287?pwd=V1NPZGNhdGlkYlNvbGxyVnJaSG1OZz09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal93">
-        <div class="modal">
-            <table id="horario93">
-                <caption>Turma 93</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Por/Jaqueline</td>
-                    <td>Mat/Hermes</td>
-                    <td>Art/Caroline</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                <tr>
-                    <td>Por/Jaqueline</td>
-                    <td>Mat/Hermes</td>
-                    <td>Art/Caroline</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                <tr>
-                    <td>Geo/Wilson</td>
-                    <td>Red/Jaqueline</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Cie/Liamara</td>
-                    <td>EFI</td>
-                </tr>
-                <tr>
-                    <td>Geo/Wilson</td>
-                    <td>Ing/Scheyla</td>
-                    <td>His/Wilson</td>
-                    <td>Cie/Liamara</td>
-                    <td>Cie/Liamara</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>His/Wilson</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Cie/Liamara</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal93()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/88914218493?pwd=WFZ6ZkZYTGs2SEYvbU84Z0x1dFgvdz09" target="_blank">Assistir Zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal111">
-        <div class="modal">
-            <table id="horario111">
-                <caption>Turma 111</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Bio/Liamara</td>
-                    <td>Fis/Luiz</td>
-                    <td>Mat/Hermes</td>
-                    <td>Fis/Luiz</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                <tr>
-                    <td>Bio/Liamara</td>
-                    <td>Fis/Luiz</td>
-                    <td>Mat/Hermes</td>
-                    <td>His/Eliada</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                <tr>
-                    <td>His/Eliada</td>
-                    <td>Qui/Matheus</td>
-                    <td>Geo/Humberto</td>
-                    <td>EFI</td>
-                    <td>Geo/Humberto</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Fil/William</td>
-                </tr>
-                <tr>
-                    <td>Ing/Scheyla</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Qui/Matheus</td>
-                    <td>Soc/Eliada</td>
-                    <td>Art/Glauciele</td>
-                </tr>
-                <tr>
-                    <td>Por/Jaqueline</td>
-                    <td>Qui/Matheus</td>
-                    <td>Red/Scheyla</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Bio/Liamara</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal111()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/83428586948?pwd=THF3VjJYUnlVcGpkaGd1NDdHbkljZz09" target="_blank">Assitir zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal121">
-        <div class="modal">
-            <table id="horario121">
-                <caption>Turma 121</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>EFI</td>
-                    <td>Rel/Jonathan</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Geo/Humberto</td>
-                </tr>
-                <tr>
-                    <td>Soc/Eliada</td>
-                    <td>Mat/Hermes</td>
-                    <td>Geo/Humberto</td>
-                    <td>Fis/Luiz</td>
-                    <td>Bio/Liamara</td>
-                </tr>
-                <tr>
-                    <td>Por/Jaqueline</td>
-                    <td>Mat/Hermes</td>
-                    <td>Qui/MAtheus</td>
-                    <td>His/Eliada</td>
-                    <td>Bio/Liamara</td>
-                </tr>
-                <tr>
-                    <td>Red/Scheyla</td>
-                    <td>Qui/Matheus</td>
-                    <td>His/Eliada</td>
-                    <td>EFI</td>
-                    <td>Rel/Jonathan</td>
-                </tr>
-                <tr>
-                    <td>Mat/Hermes</td>
-                    <td>Fis/Luiz</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Art/GLauciele</td>
-                    <td>Fil/William</td>
-                </tr>
-                <tr>
-                    <td>Bio/Liamara</td>
-                    <td>Fis/Luiz</td>
-                    <td>Qui/Matheus</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal121()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/82253678232?pwd=K3lhQnpJR251c0M1TVppVmlSM0xZQT09" target="_blank">Assistir zoom</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="bg-modal" id="modal131">
-        <div class="modal">
-            <table id="horario131">
-                <caption>Turma 131</caption>
-                <th>SEGUNDA</th>
-                <th>TERÇA</th>
-                <th>QUARTA</th>
-                <th>QUINTA</th>
-                <th>SEXTA</th>
-                <tr>
-                    <td>Rel/Pr. João</td>
-                    <td>Mat/Hermes</td>
-                    <td>Geo/Humberto</td>
-                    <td>Soc/Eliada</td>
-                    <td>Art/Glauciele</td>
-                </tr>
-                <tr>
-                    <td>Por/Jaqueline</td>
-                    <td>Qui/Matheus</td>
-                    <td>His/Eliada</td>
-                    <td>Ing/Scheyla</td>
-                    <td>Geo/Humberto</td>
-                </tr>
-                <tr>
-                    <td>Ing/Scheyla</td>
-                    <td>Fis/Luiz</td>
-                    <td>MAt/Hermes</td>
-                    <td>Lit/Stefanie</td>
-                    <td>Fil/William</td>
-                </tr>
-                <tr>
-                    <td>Red/Jaqueline</td>
-                    <td>Fis/Luiz</td>
-                    <td>Qui/Matheus</td>
-                    <td>His/Eliada</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                <tr>
-                    <td>Bio/Liamara</td>
-                    <td>Qui/Matheus</td>
-                    <td>Red/Jaqueline</td>
-                    <td>Bio/Liamara</td>
-                    <td>Mat/Hermes</td>
-                </tr>
-                <tr>
-                    <td>EFI</td>
-                    <td>Rel/Pr. João</td>
-                    <td>Por/Jaqueline</td>
-                    <td>Bio/Liamara</td>
-                    <td>EFI</td>
-                </tr>
-                
-            </table>
-            <div class="conteiner-fechar">
-                <span class="close" onclick="fecharModal131()">Fechar</span>
-                <span class="zoom"><a href="https://educadventista.zoom.us/j/85437152741?pwd=UlpKYnVScEZzeTNaMnYzZklPdFllZz09" target="_blank">Assistir zoom</a></span>
-            </div>
-        </div>
-    </div> -->
-    <!-- 
-
-    111
-
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Esp/Nair</td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-
-    121
-
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Esp/Nair</td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-
-
-    131
-
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Fis/Luiz</td>
-        <td>---</td>
-    </tr>
-    <tr>
-        <td>Mat/Hermes</td>
-        <td>---</td>
-    </tr>
-    <tr>
-        <td>Red/Jaqueline</td>
-        <td>Esp/Nair</td>
-    </tr>
-    <tr>
-        <td>Lit/Stefanie</td>
-        <td>---</td>
-    </tr> -->
-
 </section>
 
 
 
-<section id="sec-hor">    
+<section id="sec-horarios">    
 
-<div id="conteinerExtraclasse">
 
-<table id="tabelaextraclasse">
+<h1>Horários</h1>
+
+<div class="conteiner-horarios">
+
+    <div class="card">
+        <div><i class="fa-solid fa-universal-access fa-4x"></i></div>
+        <p>Infantil e Fundamental I</p>
+        <ul>
+            <li><a href="horarios/horariosturmascompletomanhaP5.pdf" target="_blank">Turmas Manhã</a></li>
+            <li><a href="horarios/horariosturmascompletotardeP5.pdf" target="_blank">Turmas Tarde</a></li>
+            <li><a href="horarios/horariosaulistasP5.pdf" target="_blank">Aulistas</a></li>
+            <li><a href="horarios/horarioscontraturno.pdf" target="_blank">Contraturno</a></li>
+            <li><a href="horarios/horariosrecreioeparqueP5.pdf" target="_blank">Recreios e Parque</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div><i class="fa-solid fa-circle-user fa-4x"></i></div>
+        <p>Fundamental II e Médio</p>
+        <ul>
+            <li><a href="horarios/horarioperiodos6M.pdf" target="_blank">Períodos</a></li>        
+            <li><a href="horarios/horarioprofsresumido6M.pdf" target="_blank">Professores</a></li>        
+            <li><a href="horarios/horarioturmasmanha6M.pdf" target="_blank">Turmas Manhã</a></li>        
+            <li><a href="horarios/horarioturmastarde6M.pdf" target="_blank">Turmas Tarde</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div><i class="fa-solid fa-book-medical fa-4x"></i></div>
+        <p>Reforço</p>
+        <ul>
+            <li><a href="reforço.pdf" target="_blank">2º ao 5º ano</a></li>        
+            <li><a href="reforço.pdf" target="_blank">6º ao 8º</a></li>        
+            <li><a href="reforço.pdf" target="_blank">9º ao Médio</a></li>
+        </ul>
+    </div>
     
-    <caption id="extraclasse">Atividades Extraclasse</caption>
-    <th>Modalidade</th>
-    <th>Público, Dias e Horários</th>
+    <div class="card">
+        <div><i class="fa-solid fa-circle-plus fa-4x"></i></div>
+        <p>Atividades Extraclasse</p>
+        <ul>
+            <li><a href="#" target="_blank">Futsal</a></li>        
+            <li><a href="#" target="_blank">Ginástica Rítmica</a></li>        
+            <li><a href="#" target="_blank">Volei</a></li>        
+            <li><a href="#" target="_blank">Crosskids</a></li>
+            <li><a href="#" target="_blank">Robótica</a></li>
+            <li><a href="#" target="_blank">Coral 6º ao Médio</a></li>
+        </ul>
+    </div>
 
-    <tr>
-        <td>Futsal</td>
-        <td>Segunda e Quarta (2º ao 4º, 17h40 - 18h45); Terça e Quinta (5º ao 8º, 17h40 - 18h45).</td>
-    </tr>
-    <tr>
-        <td>Volei</td>
-        <td>Terça e Quinta (11h40 as 12h45).</td>
-    </tr>
-    <tr>
-        <td>Ginástica Rítmica</td>
-        <td>Terça e Quinta (1º ao 6º, 11h40 - 12h45 e 17h40 - 18h45). </td>
-    </tr>
-    <tr>
-        <td>Crosskids</td>
-        <td>Segunda e Quarta (2º ao 5º, 17h40 - 18h45).</td>
-    </tr>
-    <tr>
-        <td>Robótica</td>
-        <td>Segunda (17h40 - 19h10); Terça (11h45 - 13h15); Terça (14h - 15h30).</td>
-    </tr>
-    <tr>
-        <td>Coral Novo</td>
-        <td>Quarta (6º ao Médio, 11h40 às 12h30)</td>
-    </tr>
-</table>
+
+
 
 </div>
 
-<div id="conteinerCompensacao">
+    </div>
 
-<table id="compensacao">
-    
-    <caption>Compensação</caption>
+    <div id="conteinerExtraclasse">
 
-    <th style="width: 50px">Dia</th>
-    <th style="width: 90px">Mês</th>
-    <th style="width: 40px">Grupo</th>
-    <th>Componentes</th>
+        
 
-    <tr class="done">
-        <td>18</td>
-        <td>Fevereiro</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
-    </tr>
-    <tr class="done">
-        <td>25</td>
-        <td>Fevereiro</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida        </td>
-    </tr>
-    <tr class="done">
-        <td>4</td>
-        <td>Março</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
-    </tr>
-    <tr class="done">
-        <td>11</td>
-        <td>Março</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida
-        </td>
-    </tr>
-    <tr>
-        <td>18</td>
-        <td>Março</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
-    </tr>
-    <tr>
-        <td>25</td>
-        <td>Março</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Abril</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo        </td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Abril</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
-    </tr>
-    <tr>
-        <td>29</td>
-        <td>Abril</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Maio</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>Maio</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
-    </tr>
-    <tr>
-        <td>20</td>
-        <td>Maio</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
-    </tr>
-    <tr>
-        <td>27</td>
-        <td>Maio</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Junho</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Junho</td>
-        <td>1</td>
-        <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
-    </tr>
-    <tr>
-        <td>24</td>
-        <td>Junho</td>
-        <td>2</td>
-        <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
-    </tr>
-</table>
+    </div>
 
-</div>
+    <div id="conteinerCompensacao">
 
+        <table id="compensacao">
+            
+            <caption>Compensação</caption>
 
-<div id="conteinerPlantaoSexta">
+            <th style="width: 50px">Dia</th>
+            <th style="width: 90px">Mês</th>
+            <th style="width: 40px">Grupo</th>
+            <th>Componentes</th>
 
-<table id="plantaodesexta">
-    
-    <caption>Plantão de Sexta</caption>
+            <tr class="done">
+                <td>18</td>
+                <td>Fevereiro</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
+            </tr>
+            <tr class="done">
+                <td>25</td>
+                <td>Fevereiro</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida        </td>
+            </tr>
+            <tr class="done">
+                <td>4</td>
+                <td>Março</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
+            </tr>
+            <tr class="done">
+                <td>11</td>
+                <td>Março</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida
+                </td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Março</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Março</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Abril</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo        </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Abril</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Abril</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Maio</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Maio</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Maio</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Maio</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Junho</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Junho</td>
+                <td>1</td>
+                <td>Douglas, Roberta, Giselle, Karol, Eduardo</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Junho</td>
+                <td>2</td>
+                <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
+            </tr>
+        </table>
 
-    <th style="width: 60px">Dia</th>
-    <th style="width: 60px">Mês</th>
-    <!-- <th style="width: 230px">Grupo em compensação</th> -->
-    <th>Plantonista</th>
+    </div>
 
-    <tr>
-        <td>18</td>
-        <td>Fev</td>
-        <!-- <td>1</td> -->
-        <td>Rudi</td>
-    </tr>
+    <div id="conteinerPlantaoSexta">
 
-    <tr>
-        <td>25</td>
-        <td>Fev</td>
-        <!-- <td>2</td> -->
-        <td>Douglas</td>
-    </tr>
+        <table id="plantaodesexta">
+            
+            <caption>Plantão de Sexta</caption>
 
-    <tr>
-        <td>4</td>
-        <td>Mar</td>
-        <!-- <td>1</td> -->
-        <td>Thiago</td>
-    </tr>
+            <th style="width: 60px">Dia</th>
+            <th style="width: 60px">Mês</th>
+            <!-- <th style="width: 230px">Grupo em compensação</th> -->
+            <th>Plantonista</th>
 
-    <tr>
-        <td>11</td>
-        <td>Mar</td>
-        <!-- <td>2</td> -->
-        <td>Giselle</td>
-    </tr>
+            <tr>
+                <td>18</td>
+                <td>Fev</td>
+                <!-- <td>1</td> -->
+                <td>Rudi</td>
+            </tr>
 
-    <tr>
-        <td>18</td>
-        <td>Mar</td>
-        <!-- <td>1</td> -->
-        <td>Danielle</td>
-    </tr>
+            <tr>
+                <td>25</td>
+                <td>Fev</td>
+                <!-- <td>2</td> -->
+                <td>Douglas</td>
+            </tr>
 
-    <tr>
-        <td>25</td>
-        <td>Mar</td>
-        <!-- <td>2</td> -->
-        <td>Karol</td>
-    </tr>
+            <tr>
+                <td>4</td>
+                <td>Mar</td>
+                <!-- <td>1</td> -->
+                <td>Thiago</td>
+            </tr>
 
-    <tr>
-        <td>1</td>
-        <td>Abr</td>
-        <!-- <td>1</td> -->
-        <td>Denise</td>
-    </tr>
+            <tr>
+                <td>11</td>
+                <td>Mar</td>
+                <!-- <td>2</td> -->
+                <td>Giselle</td>
+            </tr>
 
-    <tr>
-        <td>8</td>
-        <td>Abr</td>
-        <!-- <td>2</td> -->
-        <td>Eduardo</td>
-    </tr>
+            <tr>
+                <td>18</td>
+                <td>Mar</td>
+                <!-- <td>1</td> -->
+                <td>Danielle</td>
+            </tr>
 
-    <tr>
-        <td>29</td>
-        <td>Abr</td>
-        <!-- <td>1</td> -->
-        <td>Sandra</td>
-    </tr>
+            <tr>
+                <td>25</td>
+                <td>Mar</td>
+                <!-- <td>2</td> -->
+                <td>Karol</td>
+            </tr>
 
-    <tr>
-        <td>6</td>
-        <td>Mai</td>
-        <!-- <td>2</td> -->
-        <td>Giselle</td>
-    </tr>
+            <tr>
+                <td>1</td>
+                <td>Abr</td>
+                <!-- <td>1</td> -->
+                <td>Denise</td>
+            </tr>
 
-    <tr>
-        <td>13</td>
-        <td>Mai</td>
-        <!-- <td>1</td> -->
-        <td>Cida</td>
-    </tr>
+            <tr>
+                <td>8</td>
+                <td>Abr</td>
+                <!-- <td>2</td> -->
+                <td>Eduardo</td>
+            </tr>
 
-    <tr>
-        <td>20</td>
-        <td>Mai</td>
-        <!-- <td>2</td> -->
-        <td>Roberta</td>
-    </tr>
+            <tr>
+                <td>29</td>
+                <td>Abr</td>
+                <!-- <td>1</td> -->
+                <td>Sandra</td>
+            </tr>
 
-    <tr>
-        <td>27</td>
-        <td>Mai</td>
-        <!-- <td>1</td> -->
-        <td>Rudi</td>
-    </tr>
+            <tr>
+                <td>6</td>
+                <td>Mai</td>
+                <!-- <td>2</td> -->
+                <td>Giselle</td>
+            </tr>
 
-    <tr>
-        <td>3</td>
-        <td>Jun</td>
-        <!-- <td>2</td> -->
-        <td>Douglas</td>
-    </tr>
+            <tr>
+                <td>13</td>
+                <td>Mai</td>
+                <!-- <td>1</td> -->
+                <td>Cida</td>
+            </tr>
 
-    <tr>
-        <td>10</td>
-        <td>Jun</td>
-        <!-- <td>1</td> -->
-        <td>Thiago</td>
-    </tr>
+            <tr>
+                <td>20</td>
+                <td>Mai</td>
+                <!-- <td>2</td> -->
+                <td>Roberta</td>
+            </tr>
 
-    <tr>
-        <td>24</td>
-        <td>Jun</td>
-        <!-- <td>2</td> -->
-        <td>Eduardo</td>
-    </tr>
-</table>
+            <tr>
+                <td>27</td>
+                <td>Mai</td>
+                <!-- <td>1</td> -->
+                <td>Rudi</td>
+            </tr>
 
-</div>
+            <tr>
+                <td>3</td>
+                <td>Jun</td>
+                <!-- <td>2</td> -->
+                <td>Douglas</td>
+            </tr>
 
+            <tr>
+                <td>10</td>
+                <td>Jun</td>
+                <!-- <td>1</td> -->
+                <td>Thiago</td>
+            </tr>
 
+            <tr>
+                <td>24</td>
+                <td>Jun</td>
+                <!-- <td>2</td> -->
+                <td>Eduardo</td>
+            </tr>
+        </table>
+
+    </div>
 
 </section>
-
-
 
 
 <section id="sec-pes">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <!-- Tutores manhã -->
     <div class="table-conteiner">
 
         <table id="tabela-tutores-manha" class="tabela-tutores">
@@ -1706,9 +485,8 @@
 
     </div>
 
-<br>
-
-<div class="table-conteiner">
+    <!-- Tutores tarde -->
+    <div class="table-conteiner">
 
     <table id="tabela-tutores-tarde" class="tabela-tutores">
         <caption>Tutores - Tarde</caption>
@@ -1847,27 +625,16 @@
         
     </table>
 
-</div>
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    </div>
     
-
+    <!-- Profissões -->
     <table id="profissoes">
 
         <caption>Profissões</caption>
+        
+        <thead></thead>
 
-        <ul>
-            <th>Data</th>
-            <th>Profissão</th>
-            
+        <tbody>
             <tr>
                 <td>09/02</td>
                 <td>Dia do Zelador</td>
@@ -1920,28 +687,33 @@
                 <td>04/12</td>
                 <td>Dia da Orientadora Educacional</td>
             </tr>
-        </ul>
+        </tbody>
     </table>
-
 </section>
-<br>
-<br>
-<br>
+
+
 <section id="sec-salas">
-    
-    <div class="titulo-secao">
-        <p class="nome-titulo-secao">Salas</p>
-        <p class="sub-titulo-secao">Por prédio</p>
-    </div>
-    
+
+
     <div id="mapa-salas">
 
         <table class="mapa-salas" id="mapa-salas-predioA">
+
+            <!-- Prédio A -->
             <caption>Prédio A</caption>
-            <th>Piso</th>
-            <th>Sala</th>
-            <th>Manhã</th>
-            <th>Tarde</th>
+            
+            <thead>
+
+            <tr>
+                <th>Piso</th>
+                <th>Sala</th>
+                <th>Manhã</th>
+                <th>Tarde</th>
+            </tr>
+    
+            </thead>
+
+
             <tr>
                 <td rowspan="4">1</td>
                 <td>1</td>
@@ -1950,84 +722,79 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td>71</td>
+                <td>82</td>
                 <td>63</td>
             </tr>
             <tr>
                 <td>3</td>
+                <td>81</td>
                 <td>72</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>71</td>
                 <td>73</td>
             </tr>
             <tr>
-                
-                <td>4</td>
-                <td>81</td>
+                <td rowspan="6">2</td>
+                <td>6</td>
+                <td>92</td>
                 <td>83</td>
             </tr>
             <tr>
-                <td rowspan="6">2</td>
-                <td>5</td>
+                <td>7</td>
+                <td>111</td>
+                <td>111</td>
+            </tr>
+            <tr>
+                <td>8</td>
                 <td>91</td>
                 <td>93</td>
             </tr>
             <tr>
-                
-                <td>6</td>
-                <td>82</td>
-                <td>---</td>
-            </tr>
-            <tr>
-                
-                <td>7</td>
-                <td>111</td>
-                <td>---</td>
-            </tr>
-            <tr>
-                
-                <td>8</td>
-                <td>92</td>
-                <td>---</td>
-            </tr>
-            <tr>
-                
                 <td>9</td>
                 <td>131</td>
                 <td>131</td>
             </tr>
             <tr>
-                
                 <td>10</td>
                 <td>121</td>
                 <td>---</td>
             </tr>
         </table>
 
+    
         <table class="mapa-salas"  id="mapa-salas-predioB">
+
+            <!-- Prédio B -->
             <caption>Prédio B</caption>
-            <th>Piso</th>
-            <th>Sala</th>
-            <th>Manhã</th>
-            <th>Tarde</th>
+
+            <thead>
+                <tr>
+                    <th>Piso</th>
+                    <th>Sala</th>
+                    <th>Manhã</th>
+                    <th>Tarde</th>
+                </tr>
+            </thead>
+            
             <tr>
                 <td rowspan="4">1</td>
                 <td>17</td>
                 <td>21</td>
                 <td>22</td>
             </tr>
-            <tr>
-                
+            <tr>    
                 <td>18</td>
                 <td>31</td>
                 <td>33</td>
             </tr>
-            <tr>
-                
+            <tr>  
                 <td>19</td>
                 <td>42</td>
                 <td>44</td>
             </tr>
             <tr>
-                
                 <td>20</td>
                 <td>11</td>
                 <td>12</td>
@@ -2038,71 +805,92 @@
                 <td>---</td>
                 <td>13</td>
             </tr>
-            <tr>
-                
+            <tr> 
                 <td>22</td>
                 <td>---</td>
                 <td>32</td>
             </tr>
-            <tr>
-                
+            <tr>  
                 <td>23</td>
                 <td>---</td>
                 <td>53</td>
             </tr>
-            <tr>
-                
+            <tr>  
                 <td>24</td>
                 <td>51</td>
                 <td>52</td>
             </tr>
-            <tr>
-                
+            <tr> 
                 <td>25</td>
                 <td>41</td>
                 <td>43</td>
             </tr>
-            <tr>
-                
+            <tr>  
                 <td>26</td>
                 <td>---</td>
                 <td>23</td>
             </tr>
         </table>
 
+        <!-- Área verde -->
         <table class="mapa-salas"  id="mapa-salas-infantil">
+            
             <caption>Educação Infantil</caption>
-            <th>Sala</th>
-            <th>Manhã</th>
-            <th>Tarde</th>
+
+            <thead>
+                <tr>
+                    <th rowspan="2">Sala</th>
+                    <th colspan="2">Manhã</th>
+                    <th colspan="2">Tarde</th>
+                    
+                </tr>
+                <tr>
+                    <th>Turma</th>
+                    <th>Prof.</th>
+                    <th>Turma</th>
+                    <th>Prof.</th>
+                </tr>
+            </thead>
+
             <tr>
-                <td>1</td>
-                <td>5A</td>
-                <td>5B</td>
-            </tr>
-            <tr>
-                
-                <td>2</td>
-                <td>5C</td>
+                <td>11</td>
                 <td>---</td>
+                <td>---</td>
+                <td>4B</td>
+                <td>Tayná</td>
             </tr>
             <tr>
-                <td>3</td>
+                <td>12</td>
+                <td>---</td>
+                <td>---</td>
+                <td>4C</td>
+                <td>Ana Paula</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>---</td>
                 <td>---</td>
                 <td>3A</td>
+                <td>Hellen</td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>---</td>
-                <td>4A</td>
+                <td>14</td>
+                <td>5A</td>
+                <td>Jaqueline</td>
+                <td>5B</td>
+                <td>Priscila</td>
             </tr>
             <tr>
-                <td>5</td>
+                <td>15</td>
                 <td>---</td>
                 <td>---</td>
+                <td>5C</td>
+                <td>Cleide</td>
             </tr>
             <tr>
-                <td>6</td>
+                <td>16</td>
+                <td>---</td>
+                <td>---</td>
                 <td>---</td>
                 <td>---</td>
             </tr>
@@ -2111,94 +899,6 @@
     </div>
 
 </section>
-<br>
-<br>
-<br>
-
-<br><br><br><br><br><br><br><br><br><br>
-
-
-<div class="box">
-    <table class="tabela">
-        <thead>
-            <tr>
-                <td>#</td>
-                <td>Nome</td>
-                <td>Sobrenome</td>
-                <td>Idade</td>
-                <td>Salário</td>
-            </tr>
-        </thead>
-        <tbody class="tb-content">
-            
-                <tr>
-                    <td>1</td>
-                    <td>Douglas Leal dos Santos</td>
-                    <td>safgsdf</td>
-                    <td>sadf</td>
-                    <td>df</td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>Andressa Cristina Schmidt dos Santos</td>
-                    <td>safgsdf</td>
-                    <td>sadf</td>
-                    <td>df</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Giovana Schmidt dos Santos</td>
-                    <td>safgsdf</td>
-                    <td>sadf</td>
-                    <td>df</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Laura Schmidt dos Santos</td>
-                    <td>safgsdf</td>
-                    <td>sadf</td>
-                    <td>df</td>
-                </tr>
-        
-
-                
-            
-        </tbody>
-    </table>
-</div>
-
-
-
-<br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-   
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-  
-    <p>2022 - Colégio Adventista Alto Boqueirão</p>
-
-    <br>
-    <br>
-    <br>
-    
-</footer>
        
 </body>
 </html>
