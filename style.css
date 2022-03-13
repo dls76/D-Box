@@ -108,18 +108,26 @@ html {
 }
 
 #content {
-    width: 80%;
-    height: 45px;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
     text-align: center; 
     color: white;
     font-weight: 400;
-    /* border: 2px solid red; */
 }
+/* 
+#content a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    width: 20vw;
+} */
+
 
 .link-menu-corpo {
     width: 200px;
+    padding: 10px;
     background-color: #ffffff21;
     border: 2px solid white;
     display: flex;
@@ -132,11 +140,22 @@ html {
     letter-spacing: .5px;
 }
 
+@media only screen and (max-width: 990px) {
+    #content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-menu-corpo {
+        margin: 10px auto;
+        width: 40vw;
+    }
+  }
+
 .link-menu-corpo:hover {
     background-color: white;
     color: #09181F;
     font-weight: 600;
-    border: 1px solid white;
     transition: all .3s ease-out;
 }
 
@@ -393,6 +412,7 @@ html {
     width: 65%;
 }
 
+
 /* SECTION HORÁRIOS */
 
 #sec-horarios {
@@ -400,32 +420,32 @@ html {
 }
 
 #sec-horarios h1 {
-    padding: 40px 20px;
+    padding: 40px 10px;
     text-align: center;
+    font-size: 2.3em;
 }
 
 .conteiner-horarios {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 20px;
-    /* border: 1px solid red; */
-
+    padding: 15px;
 }
 
 .card {
-    width: 220px;
+    width: 230px;
     text-align: center;
     margin: 10px;
     transition: all .3s ease-out;
     border-radius: 5px;
+    border: .5px solid #dcdcdc;
 }
 
 .card:hover {
     cursor: pointer;
-    background-color: dodgerblue;
-    color: #fff;
-    /* background-color: rgb(235, 231, 231); */
+    background-color: #f0f0f0;
+    box-shadow: 0px 10px 13px -7px #000000;
+    /* border: 1.5px solid #dcdcdc; */
 }
 
 .card div i {
@@ -435,7 +455,27 @@ html {
 .card p {
     margin: 10px;
     font-weight: bold;
+    font-size: 1.1em;
 }
+
+
+  .card ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #09181F;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .card ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .card ul {
     list-style: none;
@@ -449,12 +489,13 @@ html {
 
 .card ul li a {
     text-decoration: none;
-    font-size: small;
-    font-style: italic;
-    /* color: gray; */
+    font-size: .8em;
+    color: #696969;
+    display: inline-block;
+    position: relative;
 }
 
 .card ul li a:hover {
     text-decoration: underline;
-    color: #fff;
+    color: #09181F;
 }
