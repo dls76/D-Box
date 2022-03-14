@@ -115,15 +115,6 @@ html {
     color: white;
     font-weight: 400;
 }
-/* 
-#content a {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    width: 20vw;
-} */
-
 
 .link-menu-corpo {
     width: 200px;
@@ -159,10 +150,6 @@ html {
     transition: all .3s ease-out;
 }
 
-.data-inicial p {
-    color: black;
-}
-
 #topo {
     position: fixed;
     right: 20px;
@@ -176,18 +163,63 @@ html {
     font-size: 10px;
 }
 
+/* 
+SECTION CALENDÁRIOS
+*/
+#sec-calendarios {
+    background-color: #09181F;
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+#sec-calendarios h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    /* border: 1px solid tomato; */
+}
+
+#conteiner-calendarios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.cardCal {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.cardCal p {
+    margin: 10px;
+}
+
+.cardCal p:nth-child(3) {
+    font-size: x-small;
+    color: #A1B30C;
+}
+
+.cardCal a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #sec-horarios {
     background-color: whitesmoke;
     padding-bottom: 100px;
 }
 
-
 #sec-salas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
-    padding-top: 25px;
+    padding: 160px;
     color: white;
     background-color: #A1B30C;
-    padding-bottom: 120px;
 }
 
 #sec-pes {
@@ -209,15 +241,18 @@ html {
 
 #mapa-salas {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .mapa-salas {
-    width: 30%;
+    width: 60%;
     background-color: white;
     color: #09181F;
     border-collapse: collapse;
     border-spacing: 0px;
+    margin: 50px auto;
 }
 
 .mapa-salas caption {
@@ -299,61 +334,29 @@ html {
 }
 
 
-/* TABELAS COMPENSAÇÃO E PLANTÃO SEXTA */
+/* SECTION ESCALAS - TABELAS DE COMPENSAÇÃO, PLANTÃO SEXTA E DIÁRIO */
 
-#conteinerExtraclasse, #conteinerPlantaoSexta, #conteinerCompensacao {
+
+#sec-escalas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #cbe5ff;
+}
+
+#sec-escalas table {
+    margin: 50px auto;
+}
+
+#conteinerExtraclasse, #conteinerPlantaoSexta, #conteinerCompensacao, #conteinerPlantaoDiario {
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
-#tabelaextraclasse {
-    width: 800px;
-    background-color: white;
-    color: #09181F;
-    border-collapse: collapse;
-    border-spacing: 0px;
-    margin: 40px auto;
-    text-align: center;
-    border: 1px solid lightgray;
-    box-shadow: 3px 3px 12px gray;
-}
-
-
-#tabelaextraclasse td {
-    padding: 10px 0 2px 0;
-    color: #09181F;
-    text-align: left;
-    padding-left: 10px;
-}
-
-
-#tabelaextraclasse th {
-    padding: 6px 0;
-    background-color: #cbe5ff;
-    color: #09181F;
-    font-weight: normal;
-}
-
-#tabelaextraclasse caption {
-    background-color: #09181F;
-    color: white;
-    padding: 16px 0;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-
-#tabelaextraclasse tr:nth-child(odd) {
-    background-color: #dfecfa;
-}
-
-#tabelaextraclasse tr:hover {
-    background-color: gray;
-    color: #fff;
-}
-
-#compensacao {
+#compensacao, #plantaodiario {
     width: 650px;
     background-color: white;
     color: #09181F;
@@ -377,19 +380,19 @@ html {
     box-shadow: 3px 3px 12px gray;
 }
 
-#compensacao td, #plantaodesexta td {
+#compensacao td, #plantaodesexta td, #conteinerPlantaoDiario td {
     padding: 12px 0 2px 0;
     color: #09181F;
 }
 
-#compensacao th, #plantaodesexta th {
+#compensacao th, #plantaodesexta th, #conteinerPlantaoDiario th {
     padding: 6px 0;
     background-color: #cbe5ff;
     color: #09181F;
     font-weight: normal;
 }
 
-#compensacao caption, #plantaodesexta caption {
+#compensacao caption, #plantaodesexta caption, #conteinerPlantaoDiario caption {
     background-color: #09181F;
     color: white;
     padding: 16px 0;
@@ -397,11 +400,12 @@ html {
     border-top-right-radius: 7px;
 }
 
-#compensacao tr:nth-child(odd), #plantaodesexta tr:nth-child(odd) {
+#compensacao tr:nth-child(odd), #plantaodesexta tr:nth-child(odd),
+#conteinerPlantaoDiario tr:nth-child(even) {
     background-color: #dfecfa;
 }
 
-#compensacao tr:hover, #plantaodesexta tr:hover {
+#compensacao tr:hover, #plantaodesexta tr:hover, #conteinerPlantaoDiario tr:hover {
     background-color: gray;
     color: #fff;
 }
@@ -419,8 +423,8 @@ html {
     padding: 20px;
 }
 
-#sec-horarios h1 {
-    padding: 40px 10px;
+#sec-horarios h1, #sec-calendarios h1 {
+    padding: 100px 10px 20px 10px;
     text-align: center;
     font-size: 2.3em;
 }
@@ -459,7 +463,7 @@ html {
 }
 
 
-  .card ul li a:after {
+.card ul li a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -470,12 +474,12 @@ html {
     background-color: #09181F;
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
-  }
+}
   
-  .card ul li a:hover:after {
+.card ul li a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
 .card ul {
     list-style: none;
@@ -499,3 +503,4 @@ html {
     text-decoration: underline;
     color: #09181F;
 }
+

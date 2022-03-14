@@ -8,7 +8,8 @@
     <title>Dbox</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylecal.css">
-    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="script.js"></script>
     <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');</style>
     <script src="https://kit.fontawesome.com/8abf0ff8b8.js" crossorigin="anonymous"></script>
@@ -24,30 +25,15 @@
         
         <ul id="menu">
             
-            <li><a href="#">CALENDÁRIOS</a>
-                <ul>
-                    <li><a href="https://docs.google.com/document/d/1ZJaim3uy8g8X537FtnOOJPKUmKFd9VpM/edit" target="_blank">CAAB</a></li>
-                    <li><a href="https://docs.google.com/document/d/1zxW5mBoghyTWkbjugEkSMYdPNTcP6FM2/edit?usp=sharing&ouid=112700755277277045741&rtpof=true&sd=true" target="_blank">PAIS</a></li>
-                    <li><a href="https://docs.google.com/document/d/1_R8OP_lc27p_91n-8XszF-ZNNj1_KEY5/edit?usp=sharing&ouid=112700755277277045741&rtpof=true&sd=true" target="_blank">ASP</a></li>
-                    <li><a href="https://dls76.github.io/calendarioCaab22/" target="_blank">D-Box</a></li>
-                </ul>
-            </li>
+            <li><a href="#sec-calendarios">CALENDÁRIOS</a></li>
             
             <li><a href="#sec-horarios">HORÁRIOS</a></li>
 
-            <li><a href="#">PESSOAS</a>
-                <ul>
-                    <li><a href="#tabela-tutores-manha">Tutores</a></li>
-                </ul>
-            </li>
+            <li><a href="#tabela-tutores-manha">PESSOAS</a></li>
 
-            <li><a href="#">ESCALAS</a>
-                <ul>
-                    <li><a href="#conteinerCompensacao">Compensação</a></li>
-                    <li><a href="#conteinerPlantaoSexta">Plantão Sexta</a></li>
-                    <li><a href="#conteinerPlantaoDiario">Plantão Diário</a></li>
-                </ul>
-            </li>
+            <li><a href="#sec-escalas">ESCALAS</a></li>
+            
+            <li><a href="#sec-salas">SALAS</a></li>
 
             <li id="link-emergencias"><a href="https://sistemas.usb.org.br/ama/index.php" target="_blank" >URGÊNCIAS</a></li>
 
@@ -78,9 +64,42 @@
 </section>
 
 
+<section id="sec-calendarios">
+
+<h1>Calendários</h1>
+
+<div id="conteiner-calendarios">
+
+    <div class="cardCal">
+        <div><span class="material-icons" style="font-size: 60px;">calendar_month</span></div>
+        <p><a href="https://docs.google.com/document/d/1ZJaim3uy8g8X537FtnOOJPKUmKFd9VpM/edit" target="_blank">ASP</a></p>
+        <p>Calendário oficial do Departamento de Educação da ASP e da USB</p>
+    </div>
+
+    <div class="cardCal">
+        <div><i class="material-icons" style="font-size: 60px;">date_range</i></div>
+        <p><a href="https://docs.google.com/document/d/1ZJaim3uy8g8X537FtnOOJPKUmKFd9VpM/edit">CAAB</a></p>
+        <p>Calendário oficial do colégio conforme definido nas reuniões administrativas</p>    
+    </div>
+
+    <div class="cardCal">
+        <div><i class="material-icons" style="font-size: 60px;">perm_contact_calendar</i></div>
+        <p><a href="https://docs.google.com/document/d/1zxW5mBoghyTWkbjugEkSMYdPNTcP6FM2/edit?usp=sharing&ouid=112700755277277045741&rtpof=true&sd=true" target="_blank">PAIS</a></p>
+        <p>Calendário enviado aos pais no início do ano</p>
+    </div>
+    
+    <div class="cardCal">
+        <div><i class="material-icons" style="font-size: 60px;">event_note</i></div>
+        <p><a href="https://dls76.github.io/calendarioCaab22/" target="_blank">D-Box</a></p>
+        <p>Todos os calendários juntos</p>
+    </div>
+
+</div>
+
+</section>
+
 
 <section id="sec-horarios">    
-
 
 <h1>Horários</h1>
 
@@ -132,21 +151,15 @@
         </ul>
     </div>
 
-
-
-
 </div>
 
-    </div>
-
-    <div id="conteinerExtraclasse">
-
         
+</section>
 
-    </div>
+
+<section id="sec-escalas">
 
     <div id="conteinerCompensacao">
-
         <table id="compensacao">
             
             <caption>Compensação</caption>
@@ -254,11 +267,9 @@
                 <td>Thiago, Danielle, Denise, Rudi, Sandra, Cida</td>
             </tr>
         </table>
-
     </div>
 
     <div id="conteinerPlantaoSexta">
-
         <table id="plantaodesexta">
             
             <caption>Plantão de Sexta</caption>
@@ -380,7 +391,36 @@
                 <td>Eduardo</td>
             </tr>
         </table>
+    </div>
 
+    <div id="conteinerPlantaoDiario">
+        <table id="plantaodiario">         
+            <caption>Plantão Diário Até 18h30</caption>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Plantonista</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>Rudi</td>
+                </tr>
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>Thiago</td>
+                </tr>
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>Danielle</td>
+                </tr>
+                <tr>
+                    <td>Quinta-feira</td>
+                    <td>Douglas</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </section>
@@ -673,6 +713,7 @@
             </tr>
         </tbody>
     </table>
+
 </section>
 
 
@@ -766,53 +807,53 @@
                 <td rowspan="4">1</td>
                 <td>17</td>
                 <td>21</td>
-                <td>22</td>
+                <td>23</td>
             </tr>
             <tr>    
                 <td>18</td>
-                <td>31</td>
-                <td>33</td>
+                <td>11</td>
+                <td>12</td>
             </tr>
             <tr>  
                 <td>19</td>
-                <td>42</td>
-                <td>44</td>
+                <td>31</td>
+                <td>32</td>
             </tr>
             <tr>
                 <td>20</td>
-                <td>11</td>
-                <td>12</td>
+                <td>---</td>
+                <td>13</td>
             </tr>
             <tr>
                 <td rowspan="6">2</td>
                 <td>21</td>
                 <td>---</td>
-                <td>13</td>
+                <td>22</td>
             </tr>
             <tr> 
                 <td>22</td>
                 <td>---</td>
-                <td>32</td>
+                <td>33</td>
             </tr>
             <tr>  
                 <td>23</td>
-                <td>---</td>
-                <td>53</td>
+                <td>41</td>
+                <td>42</td>
             </tr>
             <tr>  
                 <td>24</td>
-                <td>51</td>
                 <td>52</td>
+                <td>43</td>
             </tr>
             <tr> 
                 <td>25</td>
-                <td>41</td>
-                <td>43</td>
+                <td>51</td>
+                <td>53</td>
             </tr>
             <tr>  
                 <td>26</td>
-                <td>---</td>
-                <td>23</td>
+                <td>Depósito</td>
+                <td>Depósito</td>
             </tr>
         </table>
 
