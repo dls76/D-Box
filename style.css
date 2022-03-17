@@ -131,37 +131,6 @@ html {
     letter-spacing: .5px;
 }
 
-@media only screen and (max-width: 990px) {
-
-    #content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .link-menu-corpo {
-        margin: 10px auto;
-        width: 40vw;
-    }
-
-    #conteinerPlantaoSexta {
-        width: 100%;
-    }
-
-    #plantaodesexta, #plantaoDiario {
-        width: 95%;
-        font-size: smaller;
-    }
-
-    .mapa-salas {
-        width: 90%;
-        font-size: smaller;
-    }
-
-
-
-
-  }
-
 .link-menu-corpo:hover {
     background-color: white;
     color: #09181F;
@@ -373,7 +342,6 @@ SECTION CALENDÁRIOS
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* padding: 100px; */
     background-color: #cbe5ff;
 }
 
@@ -537,3 +505,34 @@ SECTION CALENDÁRIOS
     color: #09181F;
 }
 
+
+
+
+
+
+@media only screen and (max-width: 990px) {
+
+    #content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-menu-corpo {
+        margin: 10px auto;
+        width: 40vw;
+    }
+
+    #conteinerPlantaoSexta {
+        width: 100%;
+    }
+
+    #plantaodesexta, #plantaodiario, #compensacao {
+        width: 90%;
+        font-size: smaller;
+    }
+
+    .mapa-salas {
+        width: 90%;
+        font-size: smaller;
+    }
+}
