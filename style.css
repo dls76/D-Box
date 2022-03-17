@@ -141,6 +141,15 @@ html {
         margin: 10px auto;
         width: 40vw;
     }
+
+    .mapa-salas {
+        width: 90%;
+        font-size: smaller;
+    }
+
+
+
+
   }
 
 .link-menu-corpo:hover {
@@ -340,6 +349,13 @@ SECTION CALENDÁRIOS
     border-top-right-radius: 7px;
 }
 
+#tabela-tutores-manha tfoot td, #tabela-tutores-tarde tfoot td {
+    text-align: left;
+    padding-left: 20px;
+    font-size: x-small;
+    color: gray;
+}
+
 
 /* SECTION ESCALAS - TABELAS DE COMPENSAÇÃO, PLANTÃO SEXTA E DIÁRIO */
 
@@ -422,7 +438,9 @@ SECTION CALENDÁRIOS
     width: 65%;
 }
 
-
+#profissoes td {
+    padding-left: 25px;
+}
 /* SECTION HORÁRIOS */
 
 #sec-horarios {
