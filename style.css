@@ -169,7 +169,8 @@ SECTION CALENDÁRIOS
 #sec-calendarios {
     background-color: #09181F;
     color: #ffffff;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
+    /* padding-bottom: 100px; */
 }
 
 #sec-calendarios h1 {
@@ -188,7 +189,7 @@ SECTION CALENDÁRIOS
 
 .cardCal {
     width: 200px;
-    margin: 20px;
+    margin: 20px 20px 300px 20px;
     text-align: center;
 }
 
@@ -211,17 +212,6 @@ SECTION CALENDÁRIOS
     padding-bottom: 100px;
 }
 
-#sec-salas {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 160px;
-    color: white;
-    background-color: #A1B30C;
-}
-
 #sec-pes {
     width: 100%;
     background-color: whitesmoke;
@@ -237,6 +227,23 @@ SECTION CALENDÁRIOS
 #conteudo-pessoas {
     margin-top: 20px;
     display: block;
+}
+
+
+#sec-salas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+    background-color: #A1B30C;
+}
+
+
+#sec-calendarios h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 #mapa-salas {
@@ -341,7 +348,7 @@ SECTION CALENDÁRIOS
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 100px;
+    /* padding: 100px; */
     background-color: #cbe5ff;
 }
 
@@ -353,7 +360,6 @@ SECTION CALENDÁRIOS
     width: 100%;
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 #compensacao, #plantaodiario {
@@ -369,7 +375,7 @@ SECTION CALENDÁRIOS
 }
 
 #plantaodesexta {
-    width: 400px;
+    width: 650px;
     background-color: white;
     color: #09181F;
     border-collapse: collapse;
