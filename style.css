@@ -272,7 +272,7 @@ SECTION CALENDÁRIOS
 
 .table-conteiner h1 {
     color: black;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .table-conteiner table {
@@ -282,8 +282,10 @@ SECTION CALENDÁRIOS
 }
 
 #tabela-tutores-manha {
-    border-collapse: collapse;
+    box-sizing: border-box;
+    font-size: smaller;
 }
+
 .tabela-tutores, #profissoes {
     width: 600px;
     background-color: white;
@@ -294,46 +296,31 @@ SECTION CALENDÁRIOS
     text-align: left;
     padding: 5px;
     border-collapse: collapse;
-    border-spacing: 0px;
+    /* border-spacing: 0px; */
     box-shadow: 2px 2px 8px gray;
 }
 
 .tabela-tutores th, #profissoes th {
     text-align: center;
-    border: 1px lightgray solid;
-    background-color: lightgray;
+    background-color: #09181F;
+    color: #fff;
+    padding: 3px;
 }
 
 .tabela-tutores td, #profissoes td {
     padding: 8px 2px 2px 1px;
-    border: 1px lightgray solid;
 }
 
 .tabela-tutores td:nth-child(1), #profissoes td:nth-child(1)  {
     text-align: center;
 }
 
-.tabela-tutores td:nth-child(3), #profissoes td:nth-child(3)  {
+.tabela-tutores td:nth-child(3), #profissoes td:nth-child(3), .tabela-tutores td:nth-child(4), #profissoes td:nth-child(4)   {
     text-align: left;
 }
 
-.tabela-tutores td:nth-child(4), #profissoes td:nth-child(4)  {
-    text-align: left;
-}
-
-#profissoes caption  {
-    padding: 12px 0 8px 0;
-    background-color: #09181F;
-    color: white;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-
-#tabela-tutores-manha tfoot td, #tabela-tutores-tarde tfoot td {
-    text-align: left;
-    padding-left: 20px;
-    font-size: x-small;
-    color: gray;
+.tabela-tutores tbody {
+    border: 1px solid #fff;
 }
 
 .fix {
@@ -345,18 +332,35 @@ SECTION CALENDÁRIOS
 
 .fix2 {
     position: sticky;
-    left: 58px;
+    left: 69px;
     background-color: #fff;
-    width: 190px;
+    width: 100px;
+    /* height: 1.5rem; */
 }
 
 .c3, .c4, .c5, .c6 {
     width: 90px;
 }
 
-#tfootTutoresM {
-    position: sticky;
-    left: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+#profissoes caption  {
+    padding: 12px 0 8px 0;
+    background-color: #09181F;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 /* SECTION ESCALAS - TABELAS DE COMPENSAÇÃO, PLANTÃO SEXTA E DIÁRIO */
