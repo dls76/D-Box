@@ -267,7 +267,12 @@ SECTION CALENDÁRIOS
 }
 
 .table-conteiner {
-    overflow-x: auto;
+    overflow-x: scroll;
+}
+
+.table-conteiner h1 {
+    color: black;
+    margin-top: 20px;
 }
 
 .table-conteiner table {
@@ -276,9 +281,11 @@ SECTION CALENDÁRIOS
     color: #000;
 }
 
+#tabela-tutores-manha {
+    border-collapse: collapse;
+}
 .tabela-tutores, #profissoes {
     width: 600px;
-    /* height: 200px; */
     background-color: white;
     color: #09181F;
     margin: auto;
@@ -297,11 +304,6 @@ SECTION CALENDÁRIOS
     background-color: lightgray;
 }
 
-.tabela-tutores tr:hover, #profissoes tr:hover {
-    background-color: lightgray;
-}
-
-
 .tabela-tutores td, #profissoes td {
     padding: 8px 2px 2px 1px;
     border: 1px lightgray solid;
@@ -312,14 +314,14 @@ SECTION CALENDÁRIOS
 }
 
 .tabela-tutores td:nth-child(3), #profissoes td:nth-child(3)  {
-    text-align: center;
+    text-align: left;
 }
 
 .tabela-tutores td:nth-child(4), #profissoes td:nth-child(4)  {
-    text-align: center;
+    text-align: left;
 }
 
-.tabela-tutores caption, #profissoes caption  {
+#profissoes caption  {
     padding: 12px 0 8px 0;
     background-color: #09181F;
     color: white;
@@ -334,6 +336,28 @@ SECTION CALENDÁRIOS
     color: gray;
 }
 
+.fix {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+    width: 40px;
+}
+
+.fix2 {
+    position: sticky;
+    left: 58px;
+    background-color: #fff;
+    width: 190px;
+}
+
+.c3, .c4, .c5, .c6 {
+    width: 90px;
+}
+
+#tfootTutoresM {
+    position: sticky;
+    left: 0;
+}
 
 /* SECTION ESCALAS - TABELAS DE COMPENSAÇÃO, PLANTÃO SEXTA E DIÁRIO */
 
