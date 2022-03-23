@@ -319,10 +319,20 @@ SECTION CALENDÁRIOS
     text-align: left;
 }
 
-.tabela-tutores tbody {
-    border: 1px solid #fff;
+.tabela-tutores tbody tr:nth-child(even) {
+    background-color: #eee;
 }
 
+.tabela-tutores tbody tr:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.tabela-tutores tfoot tr:nth-child(1) {
+    border-top: 1px solid gray;
+}
+
+/* 
 .fix {
     position: sticky;
     left: 0;
@@ -335,8 +345,8 @@ SECTION CALENDÁRIOS
     left: 69px;
     background-color: #fff;
     width: 100px;
-    /* height: 1.5rem; */
-}
+    /* height: 1.5rem; 
+} */
 
 .c3, .c4, .c5, .c6 {
     width: 90px;
