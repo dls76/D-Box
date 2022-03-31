@@ -108,12 +108,17 @@ html {
 }
 
 #content {
-    width: 70%;
+    width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     text-align: center; 
     color: white;
     font-weight: 400;
+    flex-wrap: wrap;
+}
+
+#content a {
+    margin: 20px 20px;
 }
 
 .link-menu-corpo {
