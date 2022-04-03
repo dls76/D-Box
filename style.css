@@ -97,7 +97,6 @@ html {
     background-size: cover;
 }
 
-
 #content-area {
     height: 100%;
     width: 100%;
@@ -115,6 +114,17 @@ html {
     color: white;
     font-weight: 400;
     flex-wrap: wrap;
+}
+
+details {
+    cursor: pointer;
+}
+
+details summary {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20vh;
+    color: #000;
 }
 
 #content a {
@@ -558,11 +568,13 @@ SECTION CALENDÁRIOS
     #content {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .link-menu-corpo {
         margin: 10px auto;
-        width: 40vw;
+        width: 50vw;
     }
 
     #conteinerPlantaoSexta {
