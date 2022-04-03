@@ -406,22 +406,23 @@ html {
 /* ================== SALAS ==================== */
 #sec-salas {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* text-align: center; */
-    color: white;
+    flex-wrap: wrap;
     background-color: #A1B30C;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+#sec-salas > h2 {
+    margin: 5rem 0 5rem 30vh;
 }
 .conteiner-salas {
     width: 100%;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     flex-wrap: wrap;
-}
-.conteiner-salas h3 {
-    margin: 4rem 0 0 0;
+    color: #09181F;
 }
 .tabela-salas {
     width: 60%;
@@ -446,20 +447,20 @@ html {
     border: 0.5px solid #09181F;
 }
 
-/* details {
+details {
     cursor: pointer;
-    border: 2px solid blueviolet;
+    margin-bottom: 2rem;
 }
 
 details summary {
     display: flex;
     justify-content: flex-start;
-    margin-left: 20vh;
+    margin-left: 30vh;
     color: #000;
-} */
+} 
 
 footer {
-    height: 60vh;
+    height: 80vh;
     background-color: #09181F;
 }
 
