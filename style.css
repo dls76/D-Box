@@ -31,6 +31,10 @@ html {
     background-color: #FF4538;
     color: #09181F;
 }
+#link-emergencias:hover {
+    background-color: #a32c24;
+    color: #09181F;
+}
 .wrapper {
     display: flex;
     justify-content: flex-end;
@@ -132,6 +136,7 @@ html {
 #sec-calendarios {
     background-color: #09181F;
     color: #ffffff;
+    min-height: 100vh;
 }
 #sec-calendarios h1 {
     text-align: center;
@@ -451,19 +456,16 @@ details {
     cursor: pointer;
     margin-bottom: 2rem;
 }
-
 details summary {
     display: flex;
     justify-content: flex-start;
     margin-left: 30vh;
     color: #000;
 } 
-
 footer {
     height: 80vh;
     background-color: #09181F;
 }
-
 @media only screen and (max-width: 990px) {
 
     #content {
@@ -472,16 +474,13 @@ footer {
       align-items: center;
       justify-content: center;
     }
-
     .link-menu-corpo {
         margin: 10px auto;
         width: 70vw;
     }
-
     #conteinerPlantaoSexta {
         width: 100%;
     }
-
     #plantaodesexta, #plantaodiario, #compensacao {
         width: 90%;
         font-size: smaller;
@@ -497,4 +496,12 @@ footer {
     #profissoes caption {
         display: none;
     }
+    #sec-salas > h2 {
+        margin: 5rem 0 5rem 5vh;
+        color: #fff;
+    }
+    details summary {
+        margin-left: 5vh;
+        color: #fff;
+    } 
 }
