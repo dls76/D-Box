@@ -137,6 +137,7 @@ html {
     background-color: #09181F;
     color: #ffffff;
     min-height: 100vh;
+    padding-top: 15vh;
 }
 #sec-calendarios h1 {
     text-align: center;
@@ -147,7 +148,6 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 200px;
 }
 .cardCal {
     width: 200px;
@@ -189,13 +189,14 @@ html {
     margin: 10px;
     transition: all .3s ease-out;
     border-radius: 5px;
-    border: .5px solid #dcdcdc;
+    border: 1px solid #dcdcdc;
+    border-top: 5px solid #dcdcdc;
 }
 .card:hover {
     cursor: pointer;
     background-color: #f0f0f0;
     box-shadow: 0px 10px 13px -7px #000000;
-    /* border: 1.5px solid #dcdcdc; */
+    border-top: 5px solid orangered;
 }
 .card div i {
     margin: 20px;
