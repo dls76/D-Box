@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+#btn-mobile {
+    display: none;
+}
+#capa {
+    width: 100%;
+}
+#logo {
+    float: left;
+    padding-top: 6px;
+    padding-left: 10px;
+    width: 120px;
+    position: absolute;
+    left: 10px;
+    top: 1.5px;
+}
+#link-emergencias {
+    background-color: #FF4538;
+    color: #09181F;
+}
+#link-emergencias:hover {
+    background-color: #a32c24;
+    color: #09181F;
+}
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    background: #09181F;
+}
+.wrapper ul {
+    list-style: none;
+}
+.wrapper ul li {
+    background: #09181F;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    font-family: 'Roboto';
+}
+.wrapper ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.wrapper ul li:hover {
+    background: dodgerblue;
+}
+.wrapper ul li:hover > ul {
+    display: block;
+}
+
+
+/* =============== IMAGEM HOME ============= */
+#banner-area {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/capa.jpg);
+    background-size: cover;
+}
+#content-area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 50px;
+}
+#content {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center; 
+    color: white;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+#content a {
+    margin: 20px 20px;
+}
+.link-menu-corpo {
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff21;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.link-menu-corpo:hover {
+    background-color: white;
+    color: #09181F;
+    font-weight: 600;
+    transition: all .3s ease-out;
+}
+#topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #09181F;
+    font-family: 'Roboto';
+    font-size: 10px;
+}
+
+/* ============= CALENDÁRIOS =============*/
+
+#sec-calendarios {
+    background-color: #09181F;
+    color: #ffffff;
+    min-height: 100vh;
+    padding-top: 15vh;
+}
+#sec-calendarios h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#conteiner-calendarios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardCal {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+.cardCal p {
+    margin: 10px;
+}
+.cardCal p:nth-child(3) {
+    font-size: x-small;
+    color: #A1B30C;
+}
+.cardCal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*============ HORÁRIOS ===========*/
+
+#sec-horarios {
+    background-color: whitesmoke;
+    padding: 20px 20px 100px 20px;
+}
+#sec-horarios h1, #sec-calendarios h1 {
+    padding: 100px 10px 20px 10px;
+    text-align: center;
+    font-size: 2.3em;
+}
+.conteiner-horarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.card {
+    width: 230px;
+    text-align: center;
+    margin: 10px;
+    transition: all .3s ease-out;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    border-top: 5px solid #dcdcdc;
+}
+.card:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    box-shadow: 0px 10px 13px -7px #000000;
+    border-top: 5px solid orangered;
+}
+.card div i {
+    margin: 20px;
+}
+.card p {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.card ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #09181F;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+.card ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.card ul {
+    list-style: none;
+    margin: 20px;
+}
+.card ul li {
+    margin: 10px 0px;
+    text-align: left;
+}
+.card ul li a {
+    text-decoration: none;
+    font-size: .8em;
+    color: #696969;
+    display: inline-block;
+    position: relative;
+}
+.card ul li a:hover {
+    text-decoration: underline;
+    color: #09181F;
+}
+
+/* ============ PESSOAS =========== */
+#sec-pes {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-bottom: 200px;
+    color: white;
+    text-align: center;
+}
+#sec-pes #conteudo-pessoas {
+    text-align: center;
+}
+#conteudo-pessoas {
+    margin-top: 20px;
+    display: block;
+}
+.table-conteiner {
+    overflow-x: scroll;
+}
+.table-conteiner h1 {
+    color: black;
+    margin-top: 40px;
+}
+.table-conteiner table {
+    width: 800px;
+    /* height: 400px; */
+    color: #000;
+}
+#tabela-tutores-manha {
+    box-sizing: border-box;
+    font-size: smaller;
+}
+.tabela-tutores, 
+#profissoes {
+    width: 600px;
+    background-color: white;
+    color: #09181F;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 5px;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 8px gray;
+}
+.tabela-tutores th, 
+#profissoes th {
+    text-align: center;
+    background-color: #09181F;
+    color: #fff;
+    padding: 3px;
+}
+.tabela-tutores td, 
+#profissoes td {
+    padding: 8px 2px 2px 1px;
+}
+.tabela-tutores td:nth-child(1), 
+#profissoes td:nth-child(1)  {
+    text-align: center;
+}
+.tabela-tutores td:nth-child(3), 
+#profissoes td:nth-child(3), 
+.tabela-tutores td:nth-child(4), 
+#profissoes td:nth-child(4)   {
+    text-align: left;
+}
+#profissoes {
+    width: 65%;
+}
+#profissoes td {
+    padding-left: 25px;
+}
+.tabela-tutores tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+.tabela-tutores tbody tr:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+.tabela-tutores tfoot tr:nth-child(1) {
+    border-top: 1px solid gray;
+}
+#profissoes caption  {
+    padding: 12px 0 8px 0;
+    background-color: #09181F;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+/* ================= ESCALAS ============= */
+
+#sec-escalas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cbe5ff;
+}
+#sec-escalas table {
+    margin: 50px auto;
+}
+#conteinerExtraclasse, 
+#conteinerPlantaoSexta, 
+#conteinerCompensacao, 
+#conteinerPlantaoDiario,
+#conteinerPlantaoFindi {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#compensacao, #plantaodiario {
+    width: 50%;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 12px gray;
+}
+#plantaodesexta,
+#plantaofindi {
+    width: 50%;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 12px gray;
+}
+#compensacao td, 
+#plantaodesexta td, 
+#conteinerPlantaoDiario td,
+#conteinerPlantaoFindi td {
+    padding: 12px 0 2px 0;
+    color: #09181F;
+}
+#compensacao th, 
+#plantaodesexta th, 
+#conteinerPlantaoDiario th,
+#conteinerPlantaoFindi th {
+    padding: 6px 0;
+    background-color: #cbe5ff;
+    color: #09181F;
+    font-weight: normal;
+}
+#compensacao caption, 
+#plantaodesexta caption, 
+#conteinerPlantaoDiario caption,
+#conteinerPlantaoFindi caption {
+    background-color: #09181F;
+    color: white;
+    padding: 16px 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+#compensacao tr:nth-child(odd), 
+#plantaodesexta tr:nth-child(odd),
+#conteinerPlantaoDiario tr:nth-child(even),
+#conteinerPlantaoFindi tr:nth-child(even) {
+    background-color: #dfecfa;
+}
+#compensacao tr:hover, 
+#plantaodesexta tr:hover,
+#conteinerPlantaoDiario tr:hover,
+#conteinerPlantaoFindi tr:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+.colorGray {
+    color: lightgray;
+}
+
+/* ================== SALAS ==================== */
+#sec-salas {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #A1B30C;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+#sec-salas > h2 {
+    margin: 5rem 0 5rem 30vh;
+}
+.conteiner-salas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #09181F;
+}
+.tabela-salas {
+    width: 60%;
+    background-color: white;
+    color: #09181F;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 50px auto;
+}
+.tabela-salas caption {
+    background-color: #09181F;
+    color: white;
+    padding: 10px 0;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.tabela-salas td {
+    padding: 5px 0;
+    border: 0.5px solid #09181F;
+}
+.tabela-salas th {
+    border: 0.5px solid #09181F;
+}
+
+details {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+details summary {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30vh;
+    color: #000;
+} 
+footer {
+    height: 80vh;
+    background-color: #09181F;
+}
+@media only screen and (max-width: 990px) {
+
+    #content {
+      display: flex;
+    }
+    .link-menu-corpo {
+        margin: 10px auto;
+        width: 100%;
+    }
+    #conteinerPlantaoSexta {
+        width: 100%;
+    }
+    #plantaodesexta, #plantaodiario, #compensacao {
+        width: 90%;
+        font-size: smaller;
+    }
+    .tabela-salas {
+        width: 90%;
+        font-size: smaller;
+    }
+    #profissoes {
+        width: 90%;
+        font-size: .8rem;
+    }
+    #profissoes caption {
+        display: none;
+    }
+    #sec-salas > h2 {
+        margin: 5rem 0 5rem 5vh;
+        color: #fff;
+    }
+    details summary {
+        margin-left: 5vh;
+        color: #000;
+    }
+}
