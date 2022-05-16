@@ -190,7 +190,7 @@ html {
     transition: all .3s ease-out;
     border-radius: 5px;
     border: 1px solid #dcdcdc;
-    border-top: 5px solid #dcdcdc;
+    border-top: 5px solid #afaeae;
 }
 .card:hover {
     cursor: pointer;
