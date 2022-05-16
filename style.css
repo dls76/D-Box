@@ -245,10 +245,11 @@ html {
 /* ============ PESSOAS =========== */
 #sec-pes {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     padding-bottom: 200px;
     color: white;
     text-align: center;
+    min-height: 100vh
 }
 #sec-pes #conteudo-pessoas {
     text-align: center;
@@ -257,12 +258,13 @@ html {
     margin-top: 20px;
     display: block;
 }
-.table-conteiner {
-    overflow-x: scroll;
-}
-.table-conteiner h1 {
+#titulo-sec-pes {
     color: black;
-    margin-top: 40px;
+    margin-top: 3rem;
+}
+.table-conteiner details {
+    /* border: 2px solid green; */
+    margin-top: 20px;
 }
 .table-conteiner table {
     width: 800px;
