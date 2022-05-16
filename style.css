@@ -472,7 +472,19 @@ details summary {
     justify-content: flex-start;
     margin-left: 30vh;
     color: #000;
-} 
+}
+.conteinerPredios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteinerPredios img {
+    width: 60%;
+    margin: 20px;
+
+}
+
 footer {
     height: 80vh;
     background-color: #09181F;
