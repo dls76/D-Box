@@ -74,7 +74,7 @@ html {
 /* =============== IMAGEM HOME ============= */
 #banner-area {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/capa.jpg);
     background-size: cover;
 }
@@ -85,6 +85,8 @@ html {
     flex-direction: column;
     /* justify-content: space-evenly; */
     align-items:center;
+    padding-top: 14rem;
+    /* border: 5px solid red; */
 }
 #content {
     width: 80%;
@@ -94,7 +96,6 @@ html {
     color: white;
     font-weight: 400;
     flex-wrap: wrap;
-
 }
 #content a {
     margin: 20px 20px;
@@ -131,7 +132,7 @@ html {
     font-family: 'Roboto';
     font-size: 10px;
 }
-
+/* 
 a.logoMaisCaab {
     margin: 4rem auto;
 }
@@ -139,7 +140,8 @@ a.logoMaisCaab img {
     width: 140px;
     border-radius: 3px;
     box-shadow: 0px 10px 13px -7px #000000;
-}
+} */
+
 
 
 /* =========== SEC POPUPS ============ */
