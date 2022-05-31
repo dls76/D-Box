@@ -82,9 +82,9 @@ html {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     align-items:center;
-    padding-top: 50px;
 }
 #content {
     width: 80%;
@@ -94,6 +94,7 @@ html {
     color: white;
     font-weight: 400;
     flex-wrap: wrap;
+
 }
 #content a {
     margin: 20px 20px;
@@ -130,6 +131,40 @@ html {
     font-family: 'Roboto';
     font-size: 10px;
 }
+
+a.logoMaisCaab {
+    margin: 4rem auto;
+}
+a.logoMaisCaab img {
+    width: 140px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+
+
+/* =========== SEC POPUPS ============ */
+
+#sec-popup {
+    min-height: 100vh;
+    display: none;
+}
+
+.content-escola-origem {
+    position: relative;
+    top: 50vh;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.content-escola-origem label,
+.content-escola-origem input {
+    margin-right: 20px;
+}
+
+
+
+
 
 /* ============= CALENDÁRIOS =============*/
 
