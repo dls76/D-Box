@@ -497,6 +497,7 @@ a.logoMaisCaab img {
 .tabela-salas td {
     padding: 5px 0;
     border: 0.5px solid #09181F;
+    text-align: center;
 }
 .tabela-salas th {
     border: 0.5px solid #09181F;
