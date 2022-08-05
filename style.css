@@ -173,7 +173,7 @@ a.logoMaisCaab img {
 #sec-calendarios {
     background-color: #09181F;
     color: #ffffff;
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 15vh;
 }
 #sec-calendarios h1 {
@@ -190,6 +190,7 @@ a.logoMaisCaab img {
     width: 200px;
     margin: 20px;
     text-align: center;
+    /* border: 2px solid red; */
 }
 .cardCal p {
     margin: 10px;
@@ -537,6 +538,15 @@ footer {
     .link-menu-corpo {
         margin: 10px auto;
         width: 100%;
+    }
+    #sec-calendarios {
+        height: 100vh;
+        padding-top: 1rem;
+    }
+    .cardCal {
+        margin: 0.7rem;
+        text-align: center;
+        /* border: 2px solid red; */
     }
     #conteinerPlantaoSexta {
         width: 100%;
