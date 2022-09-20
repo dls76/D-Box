@@ -83,9 +83,8 @@ html {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     align-items:center;
-    padding-top: 14rem;
+    padding-top: 3rem;
     /* border: 5px solid red; */
 }
 #content {
@@ -96,6 +95,7 @@ html {
     color: white;
     font-weight: 400;
     flex-wrap: wrap;
+    /* border: 3px solid green; */
 }
 #content a {
     margin: 20px 20px;
