@@ -78,7 +78,7 @@ html {
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/capa.jpg);
     background-size: cover;
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
 }
 
 #content-area {
