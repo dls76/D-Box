@@ -73,23 +73,32 @@ html {
 
 /* =============== IMAGEM HOME ============= */
 #banner-area {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/capa.jpg);
     background-size: cover;
+    border: 3px solid yellow;
 }
+
 #content-area {
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     width: 100%;
+    max-width: 1280px;
+    
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    padding-top: 3rem;
+    
     /* border: 5px solid red; */
 }
 #content {
     width: 80%;
+    max-width: 800px;
     display: flex;
     justify-content: center;
     text-align: center; 
@@ -489,7 +498,6 @@ html {
 .tabela-salas th {
     border: 0.5px solid #09181F;
 }
-
 details {
     cursor: pointer;
     margin-bottom: 2rem;
@@ -516,11 +524,16 @@ footer {
     height: 80vh;
     background-color: #09181F;
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 890px) {
+
+    #banner-area {
+        position: static;
+    }
 
     #content {
-      display: flex;
+        width: 100%;
     }
+
     .link-menu-corpo {
         margin: 10px auto;
         width: 100%;
