@@ -77,7 +77,7 @@ html {
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/capa.jpg);
     background-size: cover;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,28 +92,13 @@ html {
     color: white;
     font-weight: 400;
     flex-wrap: wrap;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 
-
-/* #content-area { */
-    /* position: absolute; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    /* width: 100%; */
-    /* max-width: 1280px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items:center; */
-    /* justify-content: center; */
-    /* border: 3px solid red; */
-    /* height: 60vh; */
-/* } */
-
-
 #content a {
-    margin: 5px;
+    margin: 7px;
+    min-width: 100px;
 }
 .link-menu-corpo {
     width: 200px;
@@ -533,16 +518,14 @@ footer {
 
     #banner-area {
         position: static;
-        height: 100vh;
+        height: 80vh;
         align-items: flex-start;
     }
 
     #content {
-        /* margin-top: 30vh; */
         width: 100%;
         display: flex;
         flex-direction: row;
-        /* height: 600px; */
         margin-top: 200px;
     }
 
