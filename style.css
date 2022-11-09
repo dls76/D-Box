@@ -69,6 +69,7 @@ html {
     display: block;
 }
 
+#arotinas {text-decoration: none; cursor: pointer;}
 /* =============== IMAGEM HOME ============= */
 #banner-area {
     width: 100%;
