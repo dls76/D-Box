@@ -56,7 +56,6 @@ html {
     color: white;
     font-size: 15px;
     position: relative;
-    font-family: 'Roboto';
 }
 .wrapper ul li a {
     display: block;
@@ -70,7 +69,6 @@ html {
     display: block;
 }
 
-
 /* =============== IMAGEM HOME ============= */
 #banner-area {
     width: 100%;
@@ -82,8 +80,6 @@ html {
     justify-content: center;
     align-items: center;
 }
-
-
 #content {
     width: 80%;
     max-width: 800px;
@@ -94,8 +90,6 @@ html {
     flex-wrap: wrap;
     /* border: 1px solid yellow; */
 }
-
-
 #content a {
     margin: 7px;
     min-width: 100px;
@@ -113,7 +107,6 @@ html {
     font-weight: 500;
     letter-spacing: .5px;
 }
-
 .link-menu-corpo:hover {
     background-color: white;
     color: #09181F;
@@ -134,12 +127,10 @@ html {
 }
 
 /* =========== SEC POPUPS ============ */
-
 #sec-popup {
     min-height: 100vh;
     display: none;
 }
-
 .content-escola-origem {
     position: relative;
     top: 50vh;
@@ -147,14 +138,12 @@ html {
     justify-content: center;
     border: 1px solid red;
 }
-
 .content-escola-origem label,
 .content-escola-origem input {
     margin-right: 20px;
 }
 
 /* ============= CALENDÁRIOS =============*/
-
 #sec-calendarios {
     background-color: #09181F;
     color: #ffffff;
@@ -190,7 +179,6 @@ html {
 }
 
 /*============ HORÁRIOS ===========*/
-
 #sec-horarios {
     background-color: whitesmoke;
     padding: 20px 20px 100px 20px;
@@ -356,9 +344,7 @@ html {
     border-top-right-radius: 7px;
 }
 
-
 /* ================= ESCALAS ============= */
-
 #sec-escalas {
     display: flex;
     justify-content: center;
@@ -439,7 +425,6 @@ html {
     background-color: gray;
     color: #fff;
 }
-
 .colorGray {
     color: lightgray;
 }
@@ -509,11 +494,11 @@ details summary {
     margin: 20px;
 
 }
-
 footer {
     height: 80vh;
     background-color: #09181F;
 }
+
 @media only screen and (max-width: 890px) {
 
     #banner-area {
@@ -521,14 +506,12 @@ footer {
         height: 80vh;
         align-items: flex-start;
     }
-
     #content {
         width: 100%;
         display: flex;
         flex-direction: row;
         margin-top: 200px;
     }
-
     .link-menu-corpo {
         margin: 5px;
         width: 20%;
@@ -536,9 +519,8 @@ footer {
         padding: 0px;
         height: 50px;
     }
-
     #sec-calendarios {
-        height: 100vh;
+        /* height: 100vh; */
         padding-top: 1rem;
     }
     .cardCal {
