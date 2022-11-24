@@ -512,6 +512,8 @@ footer {
         display: flex;
         flex-direction: row;
         margin-top: 200px;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .link-menu-corpo {
         margin: 5px;
