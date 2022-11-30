@@ -7,10 +7,7 @@ function abrirLinks() {
     'https://app.powerbi.com/home?noSignUpCheck=1&redirectedFromSignup=1&username=douglas.leal@usb.educadventista.org&AutomaticLogin=true', 
     'https://caab.escolaemmovimento.com.br/#!/home', 
     'https://mail.google.com/mail/u/0/#inbox', 
-    'https://mail.google.com/mail/u/1/#inbox', 
-    'https://todoist.com/app/filter/2317565822',
-    'https://calendar.google.com/calendar/u/1/r',
-    'https://www.icloud.com/calendar/'
+    'https://mail.google.com/mail/u/1/#inbox'
     ] 
     for (let i = 0; i < sites.length; i++) {
         window.open(sites[i])
